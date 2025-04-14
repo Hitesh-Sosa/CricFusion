@@ -1,0 +1,385 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f0f0f0;
+    color: #333;
+    padding: auto;
+    margin-top: auto;
+}
+
+/* Header */
+header {
+    background-color: #003087; /* Cricket blue */
+    color: white;
+    padding: 1rem;
+    max-height: fit-content;
+}
+
+.logo h1 {
+    text-align: center;
+    font-size: 7rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 7rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+    font-size: 2em;
+}
+
+nav a:hover, nav a.active {
+    background-color: #ffcc00; /* Yellow highlight */
+    color: #003087;
+}
+
+/* Main */
+main {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* Hero Section */
+.hero {
+    background: url('../images/cricket-bg.jpg') no-repeat center/cover;
+    color: white;
+    text-align: center;
+    padding: 4rem 2rem;
+    margin-bottom: 50rem;
+    border-radius: 10px;
+}
+
+.hero h2 {
+    font-size: 5rem;
+    color: #003087;
+}
+
+.hero p {
+    font-size: 4rem;
+    color: #003087;
+}
+
+/* Generic Section Heading */
+section h2 {
+    color: #003087;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    text-align: center;
+}
+
+/* Cricketers Section */
+.cricketer-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.cricketer-box {
+    background-color: white;
+    display: flex;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    overflow: hidden;
+    transition: transform 0.3s;
+    margin-bottom: 2rem;
+}
+
+.cricketer-box:hover {
+    transform: translateY(-5px);
+}
+
+.cricketer-box img {
+    width: 300px;
+    height: 350px;
+    object-fit: cover;
+}
+
+.achievements {
+    padding: 2rem;
+    flex: 1;
+}
+
+.achievements h3 {
+    color: #003087;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.achievements p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+/* Grounds Section */
+.ground-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.ground-box {
+    background-color: white;
+    display: flex;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    overflow: hidden;
+    transition: transform 0.3s;
+    margin-bottom: 2rem;
+}
+
+.ground-box:hover {
+    transform: translateY(-5px);
+}
+
+.ground-box img {
+    width: 300px;
+    height: 350px;
+    object-fit: cover;
+}
+
+.details {
+    padding: 2rem;
+    flex: 1;
+}
+
+.details h3 {
+    color: #003087;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.details p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+/* Featured Section (Updated for larger, inline boxes in index.html) */
+.feature-grid {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 3rem;
+    flex-wrap: nowrap; /* Ensures boxes stay inline */
+}
+
+.feature-card {
+    background-color: white;
+    width: 800px; /* Much larger width */
+    padding: 4rem; /* Generous padding for spaciousness */
+    border-radius: 20px; /* Larger radius for prominence */
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25); /* Stronger shadow for depth */
+    text-align: center;
+    transition: transform 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+.feature-card img {
+    width: 100%;
+    height: 500px; /* Larger image height */
+    object-fit: cover;
+    border-radius: 15px;
+    margin-bottom: 2rem;
+}
+
+.feature-card h3 {
+    color: #003087;
+    font-size: 3rem; /* Larger heading */
+    margin-bottom: 1rem;
+}
+
+.feature-card p {
+    font-size: 1.8rem; /* Larger text */
+    line-height: 1.8;
+}
+
+/* Event Grid (For icc-events.html) */
+.event-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+/* Event Card (For icc-events.html) */
+.event-card {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.event-card:hover {
+    transform: translateY(-5px);
+}
+
+.event-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.event-card h3 {
+    color: #003087;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.event-card p {
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+/* Button Styling */
+button, .btn {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background-color: #003087;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover, .btn:hover {
+    background-color: #ffcc00;
+    color: #003087;
+}
+
+/* Form Styling (For contact.html) */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form label {
+    font-weight: bold;
+    color: #003087;
+}
+
+form input, form textarea {
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+form button {
+    width: fit-content;
+    align-self: center;
+}
+
+/* Table Styling (For stats.html) */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+th, td {
+    padding: 1rem;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: #003087;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Footer */
+footer {
+    background-color: #003087;
+    color: white;
+    text-align: center;
+    padding: 3rem;
+    margin-top: 2rem;
+}
+
+.social-links a {
+    color: #ffcc00;
+    text-decoration: none;
+    margin: 0 0.5rem;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 700px) {
+    .cricketer-box, .ground-box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cricketer-box img, .ground-box img {
+        width: 100%;
+        height: auto;
+    }
+
+    .achievements, .details {
+        padding: 1rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .hero {
+        padding: 2rem 1rem;
+    }
+
+    .hero h2 {
+        font-size: 2rem;
+    }
+
+    .feature-grid {
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap; /* Allow wrapping on very small screens */
+    }
+
+    .feature-card {
+        width: 100%;
+        max-width: 600px; /* Keep large but manageable on mobile */
+    }
+}

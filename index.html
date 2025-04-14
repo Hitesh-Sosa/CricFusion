@@ -1,0 +1,419 @@
+<!-- /* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f0f0f0;
+    color: #333;
+    padding: auto;
+    margin-top: auto;
+
+}
+
+/* Header */
+header {
+    background-color: #003087; /* Cricket blue */
+    color: white;
+    padding: 1rem;
+    max-height: fit-content;
+}
+
+.logo h1 {
+    text-align: center;
+    font-size: 7rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+nav ul {
+    list-style:none;
+    display:flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 7rem;
+    
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+    font-size: 2em;
+}
+
+nav a:hover, nav a.active {
+    background-color: #ffcc00; /* Yellow highlight */
+    color: #003087;
+}
+
+/* Main */
+main {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* Hero Section */
+.hero {
+    background: url('../images/cricket-bg.jpg') no-repeat center/cover;
+    color: white;
+    text-align: center;
+    padding: 4rem 2rem;
+    margin-bottom: 50rem;
+    border-radius: 10px;
+}
+
+.hero h2 {
+    font-size: 5rem;
+    color: #003087;
+}
+
+.hero p {
+    font-size: 4rem;
+    color: #003087;
+}
+
+/* Generic Section Heading */
+section h2 {
+    color: #003087;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    text-align: center;
+}
+
+/* Cricketers Section */
+.cricketer-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.cricketer-box {
+    background-color: white;
+    display: flex;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    overflow: hidden;
+    transition: transform 0.3s;
+    margin-bottom: 2rem;
+}
+
+.cricketer-box:hover {
+    transform: translateY(-5px);
+}
+
+.cricketer-box img {
+    width: 300;
+    height: 350px;
+    object-fit: cover;
+}
+
+.achievements {
+    padding: 2rem;
+    flex: 1;
+}
+
+.achievements h3 {
+    color: #003087;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.achievements p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+/* Grounds Section (New Single-Column Layout) */
+.ground-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.ground-box {
+    background-color: white;
+    display: flex;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    overflow: hidden;
+    transition: transform 0.3s;
+    margin-bottom: 2rem;
+}
+
+.ground-box:hover {
+    transform: translateY(-5px);
+}
+
+.ground-box img {
+    width: 300px;
+    height: 350px;
+    object-fit: cover;
+}
+
+.details {
+    padding: 2rem;
+    flex: 1;
+}
+
+.details h3 {
+    color: #003087;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.details p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+/* Grid Layout for Other Pages (Events, Featured) */
+.feature-grid, .event-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+/* Card Styling (For icc-events.html, index.html) */
+.feature-card, .event-card {
+    background-color: white;
+    padding: 8rem;
+    padding-left: 10px;
+    margin: auto;
+    width: auto;
+    display: inline;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.feature-card:hover, .event-card:hover {
+    transform: translateY(-5px);
+}
+
+.feature-card img, .event-card img {
+    width: 800px;
+    height: 800px;
+    object-fit: cover;
+    display:inline-block;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.feature-card h3, .event-card h3 {
+    color: #003087;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.feature-card p, .event-card p {
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+/* Button Styling */
+button, .btn {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background-color: #003087;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover, .btn:hover {
+    background-color: #ffcc00;
+    color: #003087;
+}
+
+/* Form Styling (For contact.html) */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form label {
+    font-weight: bold;
+    color: #003087;
+}
+
+form input, form textarea {
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+form button {
+    width: fit-content;
+    align-self: center;
+}
+
+/* Table Styling (For stats.html) */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+th, td {
+    padding: 1rem;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: #003087;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Footer */
+footer {
+    background-color: #003087;
+    color: white;
+    text-align: center;
+    padding: 3rem;
+    margin-top: 2rem;
+}
+
+.social-links a {
+    color: #ffcc00;
+    text-decoration: none;
+    margin: 0 0.5rem;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 700px) {
+    .cricketer-box, .ground-box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cricketer-box img, .ground-box img {
+        width: 100%;
+        height: auto;
+    }
+
+    .achievements, .details {
+        padding: 1rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .hero {
+        padding: 2rem 1rem;
+    }
+
+    .hero h2 {
+        font-size: 2rem;
+    }
+}this is styles.css file               and <!DOCTYPE html> -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - International Cricket Portal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <h1>International Cricket Portal</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="cricketers.html">Cricketers</a></li>
+                <li><a href="teams.html">Teams</a></li>
+                <li><a href="grounds.html">Grounds</a></li>
+                <li><a href="icc-events.html">ICC Events</a></li>
+                <li><a href="stats.html">Stats</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Welcome to the Cricket Universe</h2>
+                <p>Your ultimate source for international cricket updates, stats, and more!</p>
+            </div>
+        </section>
+        <section>
+            <div> <a href="images/cricket-photo-homePage.jpg"></a>
+            </div>
+        </section>
+        <section class="featured">
+            <h2>Featured Content</h2>
+            <div class="feature-grid">
+                <!-- <div class="feature-card">
+                    <img src="images/virat-kohli.jpg" alt="Virat Kohli">
+                    <h3>Player Spotlight</h3>
+                    <p>Virat Kohli breaks another record!</p>
+                </div>
+                <div class="feature-card">
+                    <img src="images/lords.jpg" alt="Lord's">
+                    <h3>Ground of the Week</h3>
+                    <p>Lord’s: The Home of Cricket.</p>
+                </div> -->
+                <div class="feature-card">
+                    <img src="images/ICC-home-page.jpg" alt="T20 WC">
+                    <h3>ICC Highlights</h3>
+                    <p>Relive the T20 World Cup 2024.</p>
+                </div>
+
+                <div class="feature-card">
+                    <img src="images/t20-wc.jpg" alt="T20 WC">
+                    <h3>ICC Highlights</h3>
+                    <p>Relive the T20 World Cup 2024.</p>
+                </div>
+
+                <div class="feature-card">
+                    <img src="images/t20-wc.jpg" alt="T20 WC">
+                    <h3>ICC Highlights</h3>
+                    <p>Relive the T20 World Cup 2024.</p>
+                </div>
+
+            
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 International Cricket Portal. All rights reserved.</p>
+        <div class="social-links">
+            <a href="#">Instagram</a> | <a href="#">Facebook</a> | <a href="#">GitHub</a> | <a href="#">Link List</a>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grounds - International Cricket Portal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <h1>International Cricket Portal</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cricketers.html">Cricketers</a></li>
+                <li><a href="teams.html">Teams</a></li>
+                <li><a href="grounds.html" class="active">Grounds</a></li>
+                <li><a href="icc-events.html">ICC Events</a></li>
+                <li><a href="stats.html">Stats</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section class="hero">
+            <h2>Iconic Cricket Stadiums</h2>
+            <p>Explore the world’s most famous and beautiful cricket grounds!</p>
+        </section>
+
+        <section class="grounds">
+            <h2>Legendary Cricket Grounds</h2>
+            <!-- Search Bar -->
+            <div style="margin-bottom: 2rem; text-align: center;">
+                <input type="text" id="groundSearch" placeholder="Search grounds by name..." style="padding: 0.8rem; width: 80%; max-width: 600px; font-size: 1rem; border: 1px solid #ddd; border-radius: 5px;">
+            </div>
+            <div class="ground-list">
+                <!-- Ground 1 -->
+                <div class="ground-box">
+                    <img src="images/lords.jpg" alt="Lord’s Cricket Ground">
+                    <div class="details">
+                        <h3>Lord’s Cricket Ground (London, England)</h3>
+                        <p><strong>Capacity:</strong> 30,000<br>
+                           <strong>Highlights:</strong><br>
+                           - Known as the “Home of Cricket”<br>
+                           - Hosted 2019 World Cup final<br>
+                           - Iconic pavilion and MCC museum<br>
+                           - Famous for Ashes Test series</p>
+                    </div>
+                </div>
+
+                <!-- Ground 2 -->
+                <div class="ground-box">
+                    <img src="images/mcg.jpg" alt="Melbourne Cricket Ground">
+                    <div class="details">
+                        <h3>Melbourne Cricket Ground (Melbourne, Australia)</h3>
+                        <p><strong>Capacity:</strong> 100,024<br>
+                           <strong>Highlights:</strong><br>
+                           - Hosts Boxing Day Test<br>
+                           - First Test match in 1877<br>
+                           - 2015 World Cup final venue<br>
+                           - Stunning city skyline views</p>
+                    </div>
+                </div>
+
+                <!-- Ground 3 -->
+                <div class="ground-box">
+                    <img src="images/eden-gardens.jpg" alt="Eden Gardens">
+                    <div class="details">
+                        <h3>Eden Gardens (Kolkata, India)</h3>
+                        <p><strong>Capacity:</strong> 66,000<br>
+                           <strong>Highlights:</strong><br>
+                           - “Mecca of Indian Cricket”<br>
+                           - 1987 World Cup final<br>
+                           - VVS Laxman’s 281 in 2001<br>
+                           - Electric IPL atmosphere</p>
+                    </div>
+                </div>
+
+                <!-- Ground 4 -->
+                <div class="ground-box">
+                    <img src="images/narendra-modi.jpg" alt="Narendra Modi Stadium">
+                    <div class="details">
+                        <h3>Narendra Modi Stadium (Ahmedabad, India)</h3>
+                        <p><strong>Capacity:</strong> 132,000<br>
+                           <strong>Highlights:</strong><br>
+                           - World’s largest cricket stadium<br>
+                           - 2023 World Cup final<br>
+                           - LED lighting and modern design<br>
+                           - Pink-ball Test pioneer</p>
+                    </div>
+                </div>
+
+                <!-- Ground 5 -->
+                <div class="ground-box">
+                    <img src="images/scg.jpg" alt="Sydney Cricket Ground">
+                    <div class="details">
+                        <h3>Sydney Cricket Ground (Sydney, Australia)</h3>
+                        <p><strong>Capacity:</strong> 48,000<br>
+                           <strong>Highlights:</strong><br>
+                           - Hosts New Year’s Test<br>
+                           - Heritage Green Roofed Pavilion<br>
+                           - Bradman’s triple centuries<br>
+                           - Vibrant pink Test for charity</p>
+                    </div>
+                </div>
+
+                <!-- Ground 6 -->
+                <div class="ground-box">
+                    <img src="images/newlands.jpg" alt="Newlands Cricket Ground">
+                    <div class="details">
+                        <h3>Newlands Cricket Ground (Cape Town, South Africa)</h3>
+                        <p><strong>Capacity:</strong> 25,000<br>
+                           <strong>Highlights:</strong><br>
+                           - Table Mountain backdrop<br>
+                           - 4-Star Green Star rating<br>
+                           - Oaks Enclosure greenery<br>
+                           - Steyn’s fiery spells</p>
+                    </div>
+                </div>
+
+                <!-- Ground 7 -->
+                <div class="ground-box">
+                    <img src="images/the-oval.jpg" alt="The Oval">
+                    <div class="details">
+                        <h3>The Oval (London, England)</h3>
+                        <p><strong>Capacity:</strong> 25,500<br>
+                           <strong>Highlights:</strong><br>
+                           - Birthplace of The Ashes (1882)<br>
+                           - First Test in England (1880)<br>
+                           - Gas tank backdrop<br>
+                           - 2019 World Cup matches</p>
+                    </div>
+                </div>
+
+                <!-- Ground 8 -->
+                <div class="ground-box">
+                    <img src="images/wankhede.jpg" alt="Wankhede Stadium">
+                    <div class="details">
+                        <h3>Wankhede Stadium (Mumbai, India)</h3>
+                        <p><strong>Capacity:</strong> 33,000<br>
+                           <strong>Highlights:</strong><br>
+                           - 2011 World Cup final<br>
+                           - Tendulkar’s farewell Test<br>
+                           - Coastal Arabian Sea vibe<br>
+                           - IPL Mumbai Indians home</p>
+                    </div>
+                </div>
+
+                <!-- Ground 9 -->
+                <div class="ground-box">
+                    <img src="images/adelaide-oval.jpg" alt="Adelaide Oval">
+                    <div class="details">
+                        <h3>Adelaide Oval (Adelaide, Australia)</h3>
+                        <p><strong>Capacity:</strong> 53,583<br>
+                           <strong>Highlights:</strong><br>
+                           - First day-night Test (2015)<br>
+                           - St. Peter’s Cathedral view<br>
+                           - Lush parklands setting<br>
+                           - Ponting’s twin centuries</p>
+                    </div>
+                </div>
+
+                <!-- Ground 10 -->
+                <div class="ground-box">
+                    <img src="images/galle.jpg" alt="Galle International Stadium">
+                    <div class="details">
+                        <h3>Galle International Stadium (Galle, Sri Lanka)</h3>
+                        <p><strong>Capacity:</strong> 35,000<br>
+                           <strong>Highlights:</strong><br>
+                           - Indian Ocean and fort views<br>
+                           - Muralitharan’s 800th wicket<br>
+                           - Spin bowler’s paradise<br>
+                           - UNESCO heritage backdrop</p>
+                    </div>
+                </div>
+
+                <!-- Ground 11 -->
+                <div class="ground-box">
+                    <img src="images/hpca.jpg" alt="HPCA Stadium">
+                    <div class="details">
+                        <h3>HPCA Stadium (Dharamshala, India)</h3>
+                        <p><strong>Capacity:</strong> 23,000<br>
+                           <strong>Highlights:</strong><br>
+                           - Himalayan mountain backdrop<br>
+                           - Highest international ground<br>
+                           - Colorful stands post-snow<br>
+                           - Kohli’s T20 heroics</p>
+                    </div>
+                </div>
+
+                <!-- Ground 12 -->
+                <div class="ground-box">
+                    <img src="images/old-trafford.jpg" alt="Old Trafford">
+                    <div class="details">
+                        <h3>Old Trafford (Manchester, England)</h3>
+                        <p><strong>Capacity:</strong> 26,000<br>
+                           <strong>Highlights:</strong><br>
+                           - Warne’s “Ball of the Century”<br>
+                           - Modern media center<br>
+                           - Laker’s 19 wickets in 1956<br>
+                           - Rainy Ashes battles</p>
+                    </div>
+                </div>
+
+                <!-- Ground 13 -->
+                <div class="ground-box">
+                    <img src="images/wanderers.jpg" alt="The Wanderers">
+                    <div class="details">
+                        <h3>The Wanderers (Johannesburg, South Africa)</h3>
+                        <p><strong>Capacity:</strong> 34,000<br>
+                           <strong>Highlights:</strong><br>
+                           - “Bullring” atmosphere<br>
+                           - 2003 World Cup matches<br>
+                           - Fast and bouncy pitch<br>
+                           - SA’s 438 chase in 2006</p>
+                    </div>
+                </div>
+
+                <!-- Ground 14 -->
+                <div class="ground-box">
+                    <img src="images/chepauk.jpg" alt="M.A. Chidambaram Stadium">
+                    <div class="details">
+                        <h3>M.A. Chidambaram Stadium (Chennai, India)</h3>
+                        <p><strong>Capacity:</strong> 38,200<br>
+                           <strong>Highlights:</strong><br>
+                           - First tied Test (1986)<br>
+                           - Sehwag’s 319 in 2008<br>
+                           - Coastal humid conditions<br>
+                           - CSK’s IPL fortress</p>
+                    </div>
+                </div>
+
+                <!-- Ground 15 -->
+                <div class="ground-box">
+                    <img src="images/feroz-shah-kotla.jpg" alt="Arun Jaitley Stadium">
+                    <div class="details">
+                        <h3>Arun Jaitley Stadium (Delhi, India)</h3>
+                        <p><strong>Capacity:</strong> 41,000<br>
+                           <strong>Highlights:</strong><br>
+                           - Kumble’s 10 wickets (1999)<br>
+                           - Tendulkar’s 35th century<br>
+                           - Modernized facilities<br>
+                           - Delhi Capitals’ IPL home</p>
+                    </div>
+                </div>
+
+                <!-- Ground 16 -->
+                <div class="ground-box">
+                    <img src="images/queens-park.jpg" alt="Queen’s Park Oval">
+                    <div class="details">
+                        <h3>Queen’s Park Oval (Port of Spain, Trinidad)</h3>
+                        <p><strong>Capacity:</strong> 20,000<br>
+                           <strong>Highlights:</strong><br>
+                           - Lara’s 400* in 2004<br>
+                           - Tropical greenery setting<br>
+                           - Vibrant Caribbean crowds<br>
+                           - Windies’ historic wins</p>
+                    </div>
+                </div>
+
+                <!-- Ground 17 -->
+                <div class="ground-box">
+                    <img src="images/basin-reserve.jpg" alt="Basin Reserve">
+                    <div class="details">
+                        <h3>Basin Reserve (Wellington, New Zealand)</h3>
+                        <p><strong>Capacity:</strong> 11,600<br>
+                           <strong>Highlights:</strong><br>
+                           - Mount Victoria backdrop<br>
+                           - Windy playing conditions<br>
+                           - NZ’s first Test venue<br>
+                           - Intimate fan experience</p>
+                    </div>
+                </div>
+
+                <!-- Ground 18 -->
+                <div class="ground-box">
+                    <img src="images/sabina-park.jpg" alt="Sabina Park">
+                    <div class="details">
+                        <h3>Sabina Park (Kingston, Jamaica)</h3>
+                        <p><strong>Capacity:</strong> 15,600<br>
+                           <strong>Highlights:</strong><br>
+                           - Windies’ 1994 rout of England<br>
+                           - Sobers’ 365* in 1958<br>
+                           - Lively reggae atmosphere<br>
+                           - Historic Caribbean venue</p>
+                    </div>
+                </div>
+
+                <!-- Ground 19 -->
+                <div class="ground-box">
+                    <img src="images/headingley.jpg" alt="Headingley">
+                    <div class="details">
+                        <h3>Headingley (Leeds, England)</h3>
+                        <p><strong>Capacity:</strong> 18,350<br>
+                           <strong>Highlights:</strong><br>
+                           - Botham’s 1981 Ashes miracle<br>
+                           - Stokes’ 2019 heroics<br>
+                           - Western Terrace roar<br>
+                           - Yorkshire cricket hub</p>
+                    </div>
+                </div>
+
+                <!-- Ground 20 -->
+                <div class="ground-box">
+                    <img src="images/rajiv-gandhi.jpg" alt="Rajiv Gandhi International Stadium">
+                    <div class="details">
+                        <h3>Rajiv Gandhi International Stadium (Hyderabad, India)</h3>
+                        <p><strong>Capacity:</strong> 55,000<br>
+                           <strong>Highlights:</strong><br>
+                           - Sunrisers Hyderabad home<br>
+                           - Batting-friendly pitch<br>
+                           - Modern LED facilities<br>
+                           - 2010 India-NZ Test</p>
+                    </div>
+                </div>
+
+                <!-- Ground 21 -->
+                <div class="ground-box">
+                    <img src="images/dubai.jpg" alt="Dubai International Cricket Stadium">
+                    <div class="details">
+                        <h3>Dubai International Cricket Stadium (Dubai, UAE)</h3>
+                        <p><strong>Capacity:</strong> 25,000<br>
+                           <strong>Highlights:</strong><br>
+                           - “Ring of Fire” floodlights<br>
+                           - IPL and T20I hub<br>
+                           - Desert elegance design<br>
+                           - Neutral venue records</p>
+                    </div>
+                </div>
+
+                <!-- Ground 22 -->
+                <div class="ground-box">
+                    <img src="images/supersport.jpg" alt="SuperSport Park">
+                    <div class="details">
+                        <h3>SuperSport Park (Centurion, South Africa)</h3>
+                        <p><strong>Capacity:</strong> 22,000<br>
+                           <strong>Highlights:</strong><br>
+                           - Fast bowler’s dream pitch<br>
+                           - 2009 IPL semi-finals<br>
+                           - Grassy spectator banks<br>
+                           - SA’s Test dominance</p>
+                    </div>
+                </div>
+
+                <!-- Ground 23 -->
+                <div class="ground-box">
+                    <img src="images/pallekele.jpg" alt="Pallekele International Stadium">
+                    <div class="details">
+                        <h3>Pallekele International Stadium (Kandy, Sri Lanka)</h3>
+                        <p><strong>Capacity:</strong> 35,000<br>
+                           <strong>Highlights:</strong><br>
+                           - Hill country scenery<br>
+                           - 2011 World Cup matches<br>
+                           - Night match ambiance<br>
+                           - Sangakkara’s home ground</p>
+                    </div>
+                </div>
+
+                <!-- Ground 24 -->
+                <div class="ground-box">
+                    <img src="images/edgbaston.jpg" alt="Edgbaston">
+                    <div class="details">
+                        <h3>Edgbaston (Birmingham, England)</h3>
+                        <p><strong>Capacity:</strong> 25,000<br>
+                           <strong>Highlights:</strong><br>
+                           - 2005 Ashes thriller<br>
+                           - Hollies Stand energy<br>
+                           - T20 Blast finals day<br>
+                           - Versatile pitch</p>
+                    </div>
+                </div>
+
+                <!-- Ground 25 -->
+                <div class="ground-box">
+                    <img src="images/kensington.jpg" alt="Kensington Oval">
+                    <div class="details">
+                        <h3>Kensington Oval (Bridgetown, Barbados)</h3>
+                        <p><strong>Capacity:</strong> 28,000<br>
+                           <strong>Highlights:</strong><br>
+                           - 2007 World Cup final<br>
+                           - Windies’ 1994 win<br>
+                           - Beachside carnival vibe<br>
+                           - Gibbs’ six sixes</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <h1>© 2025 International Cricket Portal. All rights reserved.</h1>
+        <div class="social-links">
+            <h1> 
+            <a href="#">Instagram</a> | <a href="#">Facebook</a> | <a href="#">GitHub</a> | <a href="#">Link List</a>
+            </h1>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Search -->
+    <script>
+        document.getElementById('groundSearch').addEventListener('input', function() {
+            const searchTerm = this.value.toLowerCase();
+            const groundBoxes = document.querySelectorAll('.ground-box');
+
+            groundBoxes.forEach(box => {
+                const name = box.querySelector('h3').textContent.toLowerCase();
+                box.style.display = name.includes(searchTerm) ? '' : 'none';
+            });
+        });
+    </script>
+</body>
+</html>
