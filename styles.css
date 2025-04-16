@@ -2,29 +2,34 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: content-box;
 }
 
 body {
+    background: url('images/cricket-photo-homePage.jpg');
     font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f0f0f0;
-    color: #333;
+    line-height: 3;
+    background-color: #ffffff;
+    color: #000000;
     padding: auto;
     margin-top: auto;
+    max-width: 70%;
+    margin-left: 7cm;
+    margin-right: 3cm;
+    background-size: 100%;
 }
 
 /* Header */
 header {
-    background-color: #003087; /* Cricket blue */
-    color: white;
+    background-color: #042664;
+    color: rgb(255, 255, 255);
     padding: 1rem;
     max-height: fit-content;
 }
 
 .logo h1 {
     text-align: center;
-    font-size: 7rem;
+    font-size: 4.5rem;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
@@ -33,11 +38,11 @@ nav ul {
     display: flex;
     justify-content: center;
     gap: 1rem;
-    margin-top: 7rem;
+    margin-top: 8rem;
 }
 
 nav a {
-    color: white;
+    color: rgb(255, 255, 255);
     text-decoration: none;
     font-weight: bold;
     padding: 0.5rem 1rem;
@@ -47,54 +52,71 @@ nav a {
 }
 
 nav a:hover, nav a.active {
-    background-color: #ffcc00; /* Yellow highlight */
-    color: #003087;
+    background-color: #ffcc00;
+    color: #a92609;
+    padding: 5%;
 }
 
 /* Main */
 main {
-    max-width: 1400px;
+    max-width: 1100px;
     margin: 0 auto;
     padding: 2rem;
+    margin-top: 5rem;
 }
 
 /* Hero Section */
 .hero {
-    background: url('../images/cricket-bg.jpg') no-repeat center/cover;
     color: white;
     text-align: center;
     padding: 4rem 2rem;
-    margin-bottom: 50rem;
+    margin-bottom: 2rem;
     border-radius: 10px;
 }
 
-.hero h2 {
-    font-size: 5rem;
-    color: #003087;
+.hero h3 {
+    font-size: 3.5rem;
+    color: #e02268;
 }
 
-.hero p {
-    font-size: 4rem;
-    color: #003087;
+.hero h4 {
+    margin-top: 1.2cm;
+    font-size: 2.5rem;
+    color: #029c30;
 }
 
 /* Generic Section Heading */
-section h2 {
-    color: #003087;
-    margin-bottom: 1rem;
-    font-size: 2rem;
+section h1 {
+    color: #6226cb;
+    margin: 3rem 0;
+    font-size: 3.5rem;
     text-align: center;
 }
 
 /* Cricketers Section */
+.cricket-home {
+    margin: 0;
+    padding: 0;
+}
+
+.cricket-home img {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: block;
+}
+
 .cricketer-list {
-    display: flex;
+    display: inline-block;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1.5rem;
 }
 
 .cricketer-box {
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     display: flex;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.15);
@@ -137,7 +159,7 @@ section h2 {
 }
 
 .ground-box {
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     display: flex;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.15);
@@ -172,26 +194,28 @@ section h2 {
     line-height: 1.8;
 }
 
-/* Featured Section (Updated for larger, inline boxes in index.html) */
+/* Featured Section */
 .feature-grid {
     display: flex;
     justify-content: center;
     gap: 2rem;
     margin-bottom: 3rem;
-    flex-wrap: nowrap; /* Ensures boxes stay inline */
+    flex-wrap: nowrap;
 }
 
 .feature-card {
-    background-color: white;
-    width: 800px; /* Much larger width */
-    padding: 4rem; /* Generous padding for spaciousness */
-    border-radius: 20px; /* Larger radius for prominence */
-    box-shadow: 0 8px 20px rgba(0,0,0,0.25); /* Stronger shadow for depth */
+    background-color: rgb(211, 208, 200);
+    width: 400px;
+    padding: 3rem;
+    border-radius: 50px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
     text-align: center;
     transition: transform 0.3s;
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 650px;
+    margin-block: 10px;
 }
 
 .feature-card:hover {
@@ -200,20 +224,127 @@ section h2 {
 
 .feature-card img {
     width: 100%;
-    height: 500px; /* Larger image height */
+    max-height: 300px;
     object-fit: cover;
-    border-radius: 15px;
+    border-radius: 14px;
     margin-bottom: 2rem;
 }
 
 .feature-card h3 {
-    color: #003087;
-    font-size: 3rem; /* Larger heading */
+    color: #9f3548;
+    font-size: 2rem;
     margin-bottom: 1rem;
 }
 
 .feature-card p {
-    font-size: 1.8rem; /* Larger text */
+    font-size: 1.5rem;
+    line-height: 1.8;
+    color: #208436;
+}
+
+/* Team Grid (for ipl.html) */
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.team-card {
+    background-color: rgb(211, 208, 200);
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+    text-align: center;
+    transition: transform 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.team-card:hover {
+    transform: translateY(-5px);
+}
+
+.team-card img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: contain;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.team-card h3 {
+    color: #9f3548;
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.team-card p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #208436;
+}
+
+/* Team Info Section (for individual team pages) */
+.team-info {
+    margin-bottom: 3rem;
+}
+
+.team-details {
+    display: flex;
+    gap: 2rem;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    padding: 2rem;
+}
+
+.team-logo {
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+.info-text {
+    flex: 1;
+}
+
+.info-text p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 0.5rem;
+}
+
+/* Team Records Section */
+.record-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.record-box {
+    background-color: rgb(211, 208, 200);
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.record-box:hover {
+    transform: translateY(-5px);
+}
+
+.record-box h3 {
+    color: #003087;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.record-box p {
+    font-size: 1rem;
     line-height: 1.8;
 }
 
@@ -240,7 +371,7 @@ section h2 {
 
 .event-card img {
     width: 100%;
-    height: 200px;
+    max-height: 200px;
     object-fit: cover;
     border-radius: 10px;
     margin-bottom: 1rem;
@@ -272,7 +403,7 @@ button, .btn {
 }
 
 button:hover, .btn:hover {
-    background-color: #ffcc00;
+    background-color: #eaf600;
     color: #003087;
 }
 
@@ -345,17 +476,17 @@ footer {
 
 /* Responsive Adjustments */
 @media (max-width: 700px) {
-    .cricketer-box, .ground-box {
+    .cricketer-box, .ground-box, .team-details {
         flex-direction: column;
         align-items: center;
     }
 
-    .cricketer-box img, .ground-box img {
+    .cricketer-box img, .ground-box img, .team-logo {
         width: 100%;
         height: auto;
     }
 
-    .achievements, .details {
+    .achievements, .details, .info-text {
         padding: 1rem;
     }
 
@@ -372,14 +503,24 @@ footer {
         font-size: 2rem;
     }
 
-    .feature-grid {
+    .feature-grid, .team-grid {
         flex-direction: column;
         align-items: center;
-        flex-wrap: wrap; /* Allow wrapping on very small screens */
+        flex-wrap: wrap;
     }
 
-    .feature-card {
+    .feature-card, .team-card {
         width: 100%;
-        max-width: 600px; /* Keep large but manageable on mobile */
+        max-width: 600px;
+    }
+
+    .event-grid, .record-list {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .hero-image {
+        max-height: 300px;
     }
 }

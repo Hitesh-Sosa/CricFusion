@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #212727;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            background-color: #daa9b9;
+            padding: 40px;
+            border-radius: 60px;
+            box-shadow: 0 4px 10px rgba(33, 138, 91, 0.1);
+            max-width: 500px;
+            width: 100%;
+            text-align: center;
+            box-sizing: border-box;
+            
+        
+        }
+
+        .container h1 {
+            background-color: rgb(207, 157, 188);
+        }
+
+        h1 {
+            color: #ff0000;
+            margin-bottom: 30px;
+            font-size: 2em;
+        }
+
+        .contact-info {
+            background-color: rgb(191, 146, 181);
+            margin-bottom: 40px;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        .contact-info p {
+            font-size: 1.1em;
+            color: #2200ff;
+            margin: 15px 0;
+        }
+
+        .contact-info a {
+            color: #111112;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .contact-info a:hover {
+            color: #bac9da;
+            text-decoration: underline;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .social-links a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background-color: #007bff;
+            border-radius: 50%;
+            text-decoration: none;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .social-links a:hover {
+            background-color: #e2e6e9;
+            transform: scale(1.1);
+        }
+
+        /* Instagram Logo using SVG */
+        .social-links a.instagram {
+            background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Instagram.svg/1200px-Instagram.svg.png') no-repeat center;
+            background-size: contain;
+        }
+
+        /* Facebook Logo using SVG */
+        .social-links a.facebook {
+            background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Facebook_f_logo_%282019%29.svg/1200px-Facebook_f_logo_%282019%29.svg.png') no-repeat center;
+            background-size: contain;
+        }
+
+        /* LinkedIn Logo using SVG */
+        .social-links a.linkedin {
+            background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/1200px-LinkedIn_logo_initials.png') no-repeat center;
+            background-size: contain;
+        }
+
+        /* GitHub Logo using SVG */
+        .social-links a.github {
+            background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/1200px-Octicons-mark-github.svg.png') no-repeat center;
+            background-size: contain;
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 1.5em;
+            }
+
+            .contact-info p {
+                font-size: 1em;
+            }
+
+            .social-links a {
+                width: 35px;
+                height: 35px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Contact Me</h1>
+        <div class="contact-info">
+            <p><strong>Email:</strong> 
+                <a href="mailto:sosahitesh52@gmail.com">sosahitesh52@gmail.com</a></p>
+            <p><strong>Instagram:</strong> 
+                <a href="https://www.instagram.com/hitesh_sosa_6731/" target="_blank">hitesh_sosa_6731</a></p>
+            <p><strong>Facebook:</strong> 
+                <a href="https://www.facebook.com/profile.php?id=61575019991441" target="_blank">Hitesh Sosa</a></p>
+            <p><strong>LinkedIn:</strong> 
+                <a href="https://www.linkedin.com/in/hitesh-sosa-844a09346/" target="_blank">Hitesh Sosa</a></p>
+            <p><strong>GitHub:</strong> 
+                <a href="https://github.com/Hitesh-Sosa" target="_blank">Hitesh-Sosa</a></p>
+        </div>
+        <div class="social-links">
+            <a href="https://www.instagram.com/hitesh_sosa_6731/" target="_blank" class="instagram" title="Instagram"></a>
+            <a href="https://www.facebook.com/profile.php?id=61575019991441" target="_blank" class="facebook" title="Facebook"></a>
+            <a href="https://www.linkedin.com/in/hitesh-sosa-844a09346/" target="_blank" class="linkedin" title="LinkedIn"></a>
+            <a href="https://github.com/Hitesh-Sosa" target="_blank" class="github" title="GitHub"></a>
+        </div>
+    </div>
+</body>
+</html>
