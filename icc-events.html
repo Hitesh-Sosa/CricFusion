@@ -1,561 +1,3 @@
-<!-- <!-- <!-- cricketers.html
-/* Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f0f0f0;
-    color: #333;
-}
-
-/* Header */
-header {
-    background-color: #003087; /* Cricket blue */
-    color: white;
-    padding: 1rem;
-    position: sticky;
-    top: 0;
-    z-index: 100;
-}
-
-.logo h1 {
-    text-align: center;
-    font-size: 2rem;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    margin-top: 1rem;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    padding: 0.5rem 1rem;
-}
-
-nav a:hover, nav a.active {
-    background-color: #ffcc00; /* Yellow highlight */
-    color: #003087;
-    border-radius: 5px;
-}
-
-/* Main */
-main {
-    max-width: 1400px;
-    margin: 0 auto;
-    padding: 2rem;
-}
-
-/* Hero Section */
-.hero {
-    background: url('../images/cricket-bg.jpg') no-repeat center/cover;
-    color: white;
-    text-align: center;
-    padding: 4rem 2rem;
-    margin-bottom: 2rem;
-}
-
-.hero h2 {
-    font-size: 2.5rem;
-}
-
-.hero p {
-    font-size: 1.2rem;
-}
-
-/* Featured Section */
-.featured h2 {
-    color: #003087;
-    margin-bottom: 1rem;
-}
-
-.feature-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-}
-
-.feature-card {
-    background-color: white;
-    padding: 1rem;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    text-align: center;
-}
-
-.feature-card img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 10px;
-}
-
-/* Cricketer Section */
-.cricketers h2 {
-    color: #003087;
-    margin-bottom: 1rem;
-}
-
-.cricketer-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
-}
-
-.cricketer-card {
-    background-color: white;
-    padding: 1rem;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    text-align: center;
-}
-
-.cricketer-card img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 10px;
-}
-
-/* Footer */
-footer {
-    background-color: #003087;
-    color: white;
-    text-align: center;
-    padding: 1rem;
-    margin-top: 2rem;
-}
-
-.social-links a {
-    color: #ffcc00;
-    text-decoration: none;
-    margin: 0 0.5rem;
-}
-
-.social-links a:hover {
-    text-decoration: underline;
-}
-
-/* Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f0f0f0;
-    color: #333;
-}
-
-/* Header */
-header {
-    background-color: #003087; /* Cricket blue */
-    color: white;
-    padding: 1rem;
-    position: sticky;
-    top: 0;
-    z-index: 100;
-}
-
-.logo h1 {
-    text-align: center;
-    font-size: 2rem;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    margin-top: 1rem;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    padding: 0.5rem 1rem;
-}
-
-nav a:hover, nav a.active {
-    background-color: #ffcc00; /* Yellow highlight */
-    color: #003087;
-    border-radius: 5px;
-}
-
-/* Main */
-main {
-    max-width: 1400px;
-    margin: 0 auto;
-    padding: 2rem;
-}
-
-/* Hero Section */
-.hero {
-    background: url('../images/cricket-bg.jpg') no-repeat center/cover;
-    color: white;
-    text-align: center;
-    padding: 4rem 2rem;
-    margin-bottom: 2rem;
-}
-
-.hero h2 {
-    font-size: 2.5rem;
-}
-
-.hero p {
-    font-size: 1.2rem;
-}
-
-/* ICC Events Section */
-.icc-events h2 {
-    color: #003087;
-    margin-bottom: 1rem;
-    font-size: 2rem;
-    text-align: center;
-}
-
-.event-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-}
-
-.event-card {
-    background-color: white;
-    padding: 1.5rem;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    text-align: center;
-}
-
-.event-card img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 10px;
-    margin-bottom: 1rem;
-}
-
-.event-card h3 {
-    color: #003087;
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
-}
-
-.event-card p {
-    font-size: 1rem;
-    line-height: 1.8;
-}
-
-/* Footer */
-footer {
-    background-color: #003087;
-    color: white;
-    text-align: center;
-    padding: 1rem;
-    margin-top: 2rem;
-}
-
-.social-links a {
-    color: #ffcc00;
-    text-decoration: none;
-    margin: 0 0.5rem;
-}
-
-.social-links a:hover {
-    text-decoration: underline;
-}
-
-/* Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f0f0f0;
-    color: #333;
-}
-
-/* Header */
-header {
-    background-color: #003087; /* Cricket blue */
-    color: white;
-    padding: 1rem;
-    position: sticky;
-    top: 0;
-    z-index: 100;
-}
-
-.logo h1 {
-    text-align: center;
-    font-size: 2rem;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    margin-top: 1rem;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    padding: 0.5rem 1rem;
-}
-
-nav a:hover, nav a.active {
-    background-color: #ffcc00; /* Yellow highlight */
-    color: #003087;
-    border-radius: 5px;
-}
-
-/* Main */
-main {
-    max-width: 1400px;
-    margin: 0 auto;
-    padding: 2rem;
-}
-
-/* Hero Section */
-.hero {
-    background: url('../images/cricket-bg.jpg') no-repeat center/cover;
-    color: white;
-    text-align: center;
-    padding: 4rem 2rem;
-    margin-bottom: 2rem;
-}
-
-.hero h2 {
-    font-size: 2.5rem;
-}
-
-.hero p {
-    font-size: 1.2rem;
-}
-
-/* Grounds Section */
-.grounds h2 {
-    color: #003087;
-    margin-bottom: 1rem;
-    font-size: 2rem;
-    text-align: center;
-}
-
-.ground-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-}
-
-.ground-card {
-    background-color: white;
-    padding: 1.5rem;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    text-align: center;
-}
-
-.ground-card img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 10px;
-    margin-bottom: 1rem;
-}
-
-.ground-card h3 {
-    color: #003087;
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
-}
-
-.ground-card p {
-    font-size: 1rem;
-    line-height: 1.8;
-}
-
-/* Footer */
-footer {
-    background-color: #003087;
-    color: white;
-    text-align: center;
-    padding: 1rem;
-    margin-top: 2rem;
-}
-
-.social-links a {
-    color: #ffcc00;
-    text-decoration: none;
-    margin: 0 0.5rem;
-}
-
-.social-links a:hover {
-    text-decoration: underline;
-}
-
-
-/* Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f0f0f0;
-    color: #333;
-}
-
-/* Header */
-header {
-    background-color: #003087; /* Cricket blue */
-    color: white;
-    padding: 1rem;
-    position: sticky;
-    top: 0;
-    z-index: 100;
-}
-
-.logo h1 {
-    text-align: center;
-    font-size: 2rem;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    margin-top: 1rem;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    padding: 0.5rem 1rem;
-}
-
-nav a:hover, nav a.active {
-    background-color: #ffcc00; /* Yellow highlight */
-    color: #003087;
-    border-radius: 5px;
-}
-
-/* Main */
-main {
-    max-width: 1400px;
-    margin: 0 auto;
-    padding: 2rem;
-}
-
-/* Hero Section */
-.hero {
-    background: url('../images/cricket-bg.jpg') no-repeat center/cover;
-    color: white;
-    text-align: center;
-    padding: 4rem 2rem;
-    margin-bottom: 2rem;
-}
-
-.hero h2 {
-    font-size: 2.5rem;
-}
-
-.hero p {
-    font-size: 1.2rem;
-}
-
-/* Cricketers Section */
-.cricketers h2 {
-    color: #003087;
-    margin-bottom: 1rem;
-    font-size: 2rem;
-    text-align: center;
-}
-
-.cricketer-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-}
-
-.cricketer-card {
-    background-color: white;
-    padding: 1.5rem;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    text-align: center;
-}
-
-.cricketer-card img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 10px;
-    margin-bottom: 1rem;
-}
-
-.cricketer-card h3 {
-    color: #003087;
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
-}
-
-.cricketer-card p {
-    font-size: 1rem;
-    line-height: 1.8;
-}
-
-/* Footer */
-footer {
-    background-color: #003087;
-    color: white;
-    text-align: center;
-    padding: 1rem;
-    margin-top: 2rem;
-}
-
-.social-links a {
-    color: #ffcc00;
-    text-decoration: none;
-    margin: 0 0.5rem;
-}
-
-.social-links a:hover {
-    text-decoration: underline;
-} -->
-
-
-
-
-
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -563,6 +5,123 @@ footer {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ICC Events - International Cricket Portal</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* ICC Events Section */
+        .icc-events {
+            background-color: #fff;
+            padding: 2.5rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            margin: 2rem auto;
+            max-width: 1400px;
+        }
+
+        .icc-events h1 {
+            font-size: 3.2rem;
+            color: #042664;
+            text-align: center;
+            margin-bottom: 2rem;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .events-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .event-card {
+            background-color: #f9f9f9;
+            padding: 1.5rem;
+            border-radius: 12px;
+            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+            transition: transform 0.3s, box-shadow 0.3s;
+            border-left: 4px solid #ffcc00;
+        }
+
+        .event-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .event-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+        }
+
+        .event-card h2 {
+            font-size: 1.8rem;
+            color: #042664;
+            margin-bottom: 0.5rem;
+        }
+
+        .event-card details {
+            margin-top: 1rem;
+        }
+
+        .event-card summary {
+            font-size: 1.2rem;
+            color: #042664;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .event-card summary:hover {
+            color: #ffcc00;
+        }
+
+        .event-card details p {
+            font-size: 1rem;
+            color: #333;
+            line-height: 1.6;
+            margin-top: 0.5rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .events-list {
+                grid-template-columns: 1fr;
+            }
+
+            .icc-events h1 {
+                font-size: 2.5rem;
+            }
+
+            .event-card h2 {
+                font-size: 1.6rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .icc-events {
+                padding: 1.5rem;
+            }
+
+            .icc-events h1 {
+                font-size: 2rem;
+            }
+
+            .event-card img {
+                height: 150px;
+            }
+
+            .event-card h2 {
+                font-size: 1.4rem;
+            }
+
+            .event-card summary {
+                font-size: 1rem;
+            }
+
+            .event-card details p {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
 </head>
 <body>
     <!-- Header -->
@@ -586,28 +145,271 @@ footer {
     <!-- Main Content -->
     <main>
         <section class="icc-events">
-            <h1>ICC Events - Legendary Cricketers</h1>
-            <div class="event-grid">
-                <!-- T20 Section -->
+            <h1>ICC Event Winners (2007–2025)</h1>
+            <div class="events-list">
+                <!-- 2007 T20 World Cup -->
                 <div class="event-card">
-                    <img src="images/chris-gayle.jpg" alt="Chris Gayle">
-                    <h3>Chris Gayle (T20)</h3>
-                    <p><strong>Records:</strong> 1,627 T20I runs, 2 centuries, 142.84 strike rate; IPL 4,484 runs (up to 2019).</p>
-                    <p><strong>Achievements:</strong> First T20I century (2007); won 2012 T20 World Cup; IPL Orange Cap (2011, 2012).</p>
+                    <img src="images/icc-2007-winner.jpg" alt="India 2007 T20 World Cup Winner">
+                    <h2>2007 T20 World Cup</h2>
+                    <details>
+                        <summary>View Stats</summary>
+                        <p><strong>Winner:</strong> India (defeated Pakistan by 5 runs)</p>
+                        <p><strong>Final:</strong> India 157/5 vs. Pakistan 152 (Johannesburg)</p>
+                        <p><strong>Top Run-Scorer:</strong> Matthew Hayden (Australia) – 265 runs</p>
+                        <p><strong>Top Wicket-Taker:</strong> Umar Gul (Pakistan) – 13 wickets</p>
+                        <p><strong>Notable:</strong> First T20 World Cup; MS Dhoni’s debut as captain.</p>
+                    </details>
                 </div>
-                <!-- ODI Section -->
+
+                <!-- 2009 T20 World Cup -->
                 <div class="event-card">
-                    <img src="images/sachin-tendulkar.jpg" alt="Sachin Tendulkar">
-                    <h3>Sachin Tendulkar (ODI)</h3>
-                    <p><strong>Records:</strong> 18,426 ODI runs, 49 centuries, first ODI double century (2010).</p>
-                    <p><strong>Achievements:</strong> Most international centuries (100); 2011 World Cup winner; Bharat Ratna (2014).</p>
+                    <img src="images/icc-2009-winner.jpg" alt="Pakistan 2009 T20 World Cup Winner">
+                    <h2>2009 T20 World Cup</h2>
+                    <details>
+                        <summary>View Stats</summary>
+                        <p><strong>Winner:</strong> Pakistan (defeated Sri Lanka by 8 wickets)</p>
+                        <p><strong>Final:</strong> Sri Lanka 138/6 vs. Pakistan 139/2 (Lord’s)</p>
+                        <p><strong>Top Run-Scorer:</strong> Tillakaratne Dilshan (Sri Lanka) – 317 runs</p>
+                        <p><strong>Top Wicket-Taker:</strong> Umar Gul (Pakistan) – 13 wickets</p>
+                        <p><strong>Notable:</strong> Shahid Afridi named Player of the Match.</p>
+                    </details>
                 </div>
-                <!-- Test Section -->
+
+                <!-- 2010 T20 World Cup -->
                 <div class="event-card">
-                    <img src="images/brian-lara.jpg" alt="Brian Lara">
-                    <h3>Brian Lara (Test)</h3>
-                    <p><strong>Records:</strong> 11,953 Test runs, 34 centuries, highest Test score 400* (2004).</p>
-                    <p><strong>Achievements:</strong> First-class record 501* (1994); led West Indies to 2004 ICC Champions Trophy.</p>
+                    <img src="images/icc-2010-winner.jpg" alt="England 2010 T20 World Cup Winner">
+                    <h2>2010 T20 World Cup</h2>
+                    <details>
+                        <summary>View Stats</summary>
+                        <p><strong>Winner:</strong> England (defeated Australia by 7 wickets)</p>
+                        <p><strong>Final:</strong> Australia 147/6 vs. England 148/3 (Bridgetown)</p>
+                        <p><strong>Top Run-Scorer:</strong> Mahela Jayawardene (Sri Lanka) – 302 runs</p>
+                        <p><strong>Top Wicket-Taker:</strong> Dirk Nannes (Australia) – 14 wickets</p>
+                        <p><strong>Notable:</strong> England’s first ICC T20 title.</p>
+                    </details>
+                </div>
+
+                <!-- 2011 ODI World Cup -->
+                <div class="event-card">
+                    <img src="images/icc-2011-winner.jpg" alt="India 2011 ODI World Cup Winner">
+                    <h2>2011 ODI World Cup</h2>
+                    <details>
+                        <summary>View Stats</summary>
+                        <p><strong>Winner:</strong> India (defeated Sri Lanka by 6 wickets)</p>
+                        <p><strong>Final:</strong> Sri Lanka 274/6 vs. India 277/4 (Mumbai)</p>
+                        <p><strong>Top Run-Scorer:</strong> Tillakaratne Dilshan (Sri Lanka) – 500 runs</p>
+                        <p><strong>Top Wicket-Taker:</strong> Shahid Afridi (Pakistan)/Zaheer Khan (India) – 21 wickets</p>
+                        <p><strong>Notable:</strong> MS Dhoni’s iconic six sealed the win.</p>
+                    </details>
+                </div>
+
+                <!-- 2012 T20 World Cup -->
+                <div class="event-card">
+                    <img src="images/icc-2012-winner.jpg" alt="West Indies 2012 T20 World Cup Winner">
+                    <h2>2012 T20 World Cup</h2>
+                    <details>
+                        <summary>View Stats</summary>
+                        <p><strong>Winner:</strong> West Indies (defeated Sri Lanka by 36 runs)</p>
+                        <p><strong>Final:</strong> West Indies 137/6 vs. Sri Lanka 101 (Colombo)</p>
+                        <p><strong>Top Run-Scorer:</strong> Shane Watson (Australia) – 249 runs</p>
+                        <p><strong>Top Wicket-Taker:</strong> Ajantha Mendis (Sri Lanka) – 15 wickets</p>
+                        <p><strong>Notable:</strong> First host nation to reach the final.</p>
+                    </details>
+                </div>
+
+                <!-- 2013 Champions Trophy -->
+                <div class="event-card">
+                    <img src="images/icc-2013-winner.jpg" alt="India 2013 Champions Trophy Winner">
+                    <h2>2013 Champions Trophy</h2>
+                    <details>
+                        <summary>View Stats</summary>
+                        <p><strong>Winner:</strong> India (defeated England by 5 runs)</p>
+                        <p><strong>Final:</strong> India 129/7 vs. England 124/8 (Birmingham, 20 overs)</p>
+                        <p><strong>Top Run-Scorer:</strong> Shikhar Dhawan (India) – 363 runs</p>
+                        <p><strong>Top Wicket-Taker:</strong> Ravindra Jadeja (India) – 12 wickets</p>
+                        <p><strong>Notable:</strong> MS Dhoni became the first captain to win all three ICC trophies.</p>
+                    </details>
+                </div>
+
+                <!-- 2014 T20 World Cup -->
+                <div class="event-card">
+                    <img src="images/icc-2014-winner.jpg" alt="Sri Lanka 2014 T20 World Cup Winner">
+                    <h2>2014 T20 World Cup</h2>
+                    <details>
+                        <summary>View Stats</summary>
+                        <p><strong>Winner:</strong> Sri Lanka (defeated India by 6 wickets)</p>
+                        <p><strong>Final:</strong> India 130/4 vs. Sri Lanka 134/4 (Dhaka)</p>
+                        <p><strong>Top Run-Scorer:</strong> Virat Kohli (India) – 319 runs</p>
+                        <p><strong>Top Wicket-Taker:</strong> Imran Tahir (South Africa)/Ajantha Mendis (Sri Lanka) – 12 wickets</p>
+                        <p><strong>Notable:</strong> Kumar Sangakkara’s final T20I.</p>
+                    </details>
+                </div>
+
+                <!-- 2015 ODI World Cup -->
+                <div class="event-card">
+                    <img src="images/icc-2015-winner.jpg" alt="Australia 2015 ODI World Cup Winner">
+                    <h2>2015 ODI World Cup</h2>
+                    <details>
+                        <summary>View Stats</summary>
+                        <p><strong>Winner:</strong> Australia (defeated New Zealand by 7 wickets)</p>
+                        <p><strong>Final:</strong> New Zealand 183 vs. Australia 186/3 (Melbourne)</p>
+                        <p><strong>Top Run-Scorer:</strong> Martin Guptill (New Zealand) – 547 runs</p>
+                        <p><strong>Top Wicket-Taker:</strong> Mitchell Starc (Australia)/Trent Boult (New Zealand) – 22 wickets</p>
+                        <p><strong>Notable:</strong> Australia’s fifth ODI World Cup title.</p>
+                    </details>
+                </div>
+
+                <!-- 2016 T20 World Cup -->
+                <div class="event-card">
+                    <img src="images/icc-2016-winner.jpg" alt="West Indies 2016 T20 World Cup Winner">
+                    <h2>2016 T20 World Cup</h2>
+                    <details>
+                        <summary>View Stats</summary>
+                        <p><strong>Winner:</strong> West Indies (defeated England by 4 wickets)</p>
+                        <p><strong>Final:</strong> England 155/9 vs. West Indies 161/6 (Kolkata)</p>
+                        <p><strong>Top Run-Scorer:</strong> Tamim Iqbal (Bangladesh) – 295 runs</p>
+                        <p><strong>Top Wicket-Taker:</strong> Mohammad Nabi (Afghanistan) – 12 wickets</p>
+                        <p><strong>Notable:</strong> Carlos Brathwaite’s four sixes in the final over.</p>
+                    </details>
+                </div>
+
+                <!-- 2017 Champions Trophy -->
+                <div class="event-card">
+                    <img src="images/icc-2017-winner.jpg" alt="Pakistan 2017 Champions Trophy Winner">
+                    <h2>2017 Champions Trophy</h2>
+                    <details>
+                        <summary>View Stats</summary>
+                        <p><strong>Winner:</strong> Pakistan (defeated India by 180 runs)</p>
+                        <p><strong>Final:</strong> Pakistan 338/4 vs. India 158 (Cardiff)</p>
+                        <p><strong>Top Run-Scorer:</strong> Shikhar Dhawan (India) – 338 runs</p>
+                        <p><strong>Top Wicket-Taker:</strong> Hasan Ali (Pakistan) – 13 wickets</p>
+                        <p><strong>Notable:</strong> Pakistan’s first Champions Trophy title.</p>
+                    </details>
+                </div>
+
+                <!-- 2019 ODI World Cup -->
+                <div class="event-card">
+                    <img src="images/icc-2019-winner.jpg" alt="England 2019 ODI World Cup Winner">
+                    <h2>2019 ODI World Cup</h2>
+                    <details>
+                        <summary>View Stats</summary>
+                        <p><strong>Winner:</strong> England (defeated New Zealand via boundary countback)</p>
+                        <p><strong>Final:</strong> England 241 vs. New Zealand 241 (Lord’s, Super Over)</p>
+                        <p><strong>Top Run-Scorer:</strong> Rohit Sharma (India) – 648 runs</p>
+                        <p><strong>Top Wicket-Taker:</strong> Mitchell Starc (Australia) – 27 wickets</p>
+                        <p><strong>Notable:</strong> First World Cup decided by boundary countback.</p>
+                    </details>
+                </div>
+
+                <!-- 2019–2021 World Test Championship -->
+                <div class="event-card">
+                    <img src="images/icc-2019-2021-winner.jpg" alt="New Zealand 2019–2021 WTC Winner">
+                    <h2>2019–2021 World Test Championship</h2>
+                    <details>
+                        <summary>View Stats</summary>
+                        <p><strong>Winner:</strong> New Zealand (defeated India by 8 wickets)</p>
+                        <p><strong>Final:</strong> New Zealand 249 & 140/2 vs. India 217 & 170 (Southampton)</p>
+                        <p><strong>Top Run-Scorer:</strong> Joe Root (England) – 2285 runs</p>
+                        <p><strong>Top Wicket-Taker:</strong> Jason Holder (West Indies) – 71 wickets</p>
+                        <p><strong>Notable:</strong> Inaugural WTC; Kyle Jamieson named Player of the Match.</p>
+                    </details>
+                </div>
+
+                <!-- 2021 T20 World Cup -->
+                <div class="event-card">
+                    <img src="images/icc-2021-winner.jpg" alt="Australia 2021 T20 World Cup Winner">
+                    <h2>2021 T20 World Cup</h2>
+                    <details>
+                        <summary>View Stats</summary>
+                        <p><strong>Winner:</strong> Australia (defeated New Zealand by 8 wickets)</p>
+                        <p><strong>Final:</strong> New Zealand 172/4 vs. Australia 173/2 (Dubai)</p>
+                        <p><strong>Top Run-Scorer:</strong> Babar Azam (Pakistan) – 303 runs</p>
+                        <p><strong>Top Wicket-Taker:</strong> Wanindu Hasaranga (Sri Lanka) – 16 wickets</p>
+                        <p><strong>Notable:</strong> Australia’s first T20 World Cup title.</p>
+                    </details>
+                </div>
+
+                <!-- 2021–2023 World Test Championship -->
+                <div class="event-card">
+                    <img src="images/icc-2021-2023-winner.jpg" alt="Australia 2021–2023 WTC Winner">
+                    <h2>2021–2023 World Test Championship</h2>
+                    <details>
+                        <summary>View Stats</summary>
+                        <p><strong>Winner:</strong> Australia (defeated India by 209 runs)</p>
+                        <p><strong>Final:</strong> India 296 & 234 vs. Australia 469 & 61/1 (London)</p>
+                        <p><strong>Top Run-Scorer:</strong> Joe Root (England) – 2285 runs</p>
+                        <p><strong>Top Wicket-Taker:</strong> Ravichandran Ashwin (India) – 71 wickets</p>
+                        <p><strong>Notable:</strong> Travis Head named Player of the Match.</p>
+                    </details>
+                </div>
+
+                <!-- 2022 T20 World Cup -->
+                <div class="event-card">
+                    <img src="images/icc-2022-winner.jpg" alt="England 2022 T20 World Cup Winner">
+                    <h2>2022 T20 World Cup</h2>
+                    <details>
+                        <summary>View Stats</summary>
+                        <p><strong>Winner:</strong> England (defeated Pakistan by 5 wickets)</p>
+                        <p><strong>Final:</strong> Pakistan 137/8 vs. England 138/5 (Melbourne)</p>
+                        <p><strong>Top Run-Scorer:</strong> Virat Kohli (India) – 296 runs</p>
+                        <p><strong>Top Wicket-Taker:</strong> Wanindu Hasaranga (Sri Lanka) – 15 wickets</p>
+                        <p><strong>Notable:</strong> England held both ODI and T20 World Cup titles.</p>
+                    </details>
+                </div>
+
+                <!-- 2023 ODI World Cup -->
+                <div class="event-card">
+                    <img src="images/icc-2023-winner.jpg" alt="Australia 2023 ODI World Cup Winner">
+                    <h2>2023 ODI World Cup</h2>
+                    <details>
+                        <summary>View Stats</summary>
+                        <p><strong>Winner:</strong> Australia (defeated India by 6 wickets)</p>
+                        <p><strong>Final:</strong> India 240 vs. Australia 241/4 (Ahmedabad)</p>
+                        <p><strong>Top Run-Scorer:</strong> Virat Kohli (India) – 765 runs</p>
+                        <p><strong>Top Wicket-Taker:</strong> Mohammed Shami (India) – 24 wickets</p>
+                        <p><strong>Notable:</strong> Australia’s sixth ODI World Cup title.</p>
+                    </details>
+                </div>
+
+                <!-- 2024 T20 World Cup -->
+                <div class="event-card">
+                    <img src="images/icc-2024-winner.jpg" alt="India 2024 T20 World Cup Winner">
+                    <h2>2024 T20 World Cup</h2>
+                    <details>
+                        <summary>View Stats</summary>
+                        <p><strong>Winner:</strong> India (defeated South Africa by 7 runs)</p>
+                        <p><strong>Final:</strong> India 176/7 vs. South Africa 169/8 (Barbados)</p>
+                        <p><strong>Top Run-Scorer:</strong> Rahmanullah Gurbaz (Afghanistan) – 281 runs</p>
+                        <p><strong>Top Wicket-Taker:</strong> Arshdeep Singh (India)/Fazalhaq Farooqi (Afghanistan) – 17 wickets</p>
+                        <p><strong>Notable:</strong> India’s second T20 World Cup title after 2007.</p>
+                    </details>
+                </div>
+
+                <!-- 2025 Champions Trophy -->
+                <div class="event-card">
+                    <img src="images/icc-2025-winner.jpg" alt="India 2025 Champions Trophy Winner">
+                    <h2>2025 Champions Trophy</h2>
+                    <details>
+                        <summary>View Stats</summary>
+                        <p><strong>Winner:</strong> India (defeated New Zealand by 4 wickets)</p>
+                        <p><strong>Final:</strong> New Zealand 238/8 vs. India 239/6 (Dubai)</p>
+                        <p><strong>Top Run-Scorer:</strong> Virat Kohli (India) – ~350 runs (approximate)</p>
+                        <p><strong>Top Wicket-Taker:</strong> Jasprit Bumrah (India) – ~12 wickets (approximate)</p>
+                        <p><strong>Notable:</strong> India’s third Champions Trophy title; Rohit Sharma’s second ICC title as captain.</p>
+                    </details>
+                </div>
+
+                <!-- 2023–2025 World Test Championship -->
+                <div class="event-card">
+                    <img src="images/icc-2023-2025-winner.jpg" alt="2023–2025 WTC TBD">
+                    <h2>2023–2025 World Test Championship</h2>
+                    <details>
+                        <summary>View Stats</summary>
+                        <p><strong>Winner:</strong> TBD (Final: South Africa vs. Australia, June 2025)</p>
+                        <p><strong>Top Run-Scorer:</strong> Joe Root (England) – ~2000 runs (as of Feb 2025)</p>
+                        <p><strong>Top Wicket-Taker:</strong> Jasprit Bumrah (India) – ~60 wickets (as of Feb 2025)</p>
+                        <p><strong>Notable:</strong> Final stats unavailable; ongoing tournament.</p>
+                    </details>
                 </div>
             </div>
         </section>
@@ -619,9 +421,9 @@ footer {
         <div class="social-links">
             <a href="https://www.instagram.com/hitesh_sosa_6731/">Instagram</a> | 
             <a href="https://www.facebook.com/profile.php?id=61575019991441">Facebook</a> | 
-            <a href="https://www.linkedin.com/feed/">Link List</a> | 
+            <a href="https://www.linkedin.com/feed/">LinkedIn</a> |
             <a href="https://github.com/Hitesh-Sosa">GitHub</a> 
         </div>
     </footer>
 </body>
-</html>   
+</html>

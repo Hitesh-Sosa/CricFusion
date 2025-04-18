@@ -1,224 +1,137 @@
-/* Reset */
+/* Reset default styles */
 * {
     margin: 0;
     padding: 0;
-    box-sizing: content-box;
+    box-sizing: border-box;
 }
 
 body {
-    /* background: url('images/cricket-photo-homePage.jpg'); */
     font-family: Arial, sans-serif;
-    line-height: 3;
-    background-color: #ffffff;
-    color: #000000;
-    padding: auto;
-    margin-top: auto;
-    max-width: 70%;
-    margin-left: 7cm;
-    margin-right: 3cm;
-    background-size: 100%;
+    line-height: 1.6;
+    background-color: #f5f5f5;
+    color: #333;
+    max-width: 90%;
+    margin: 0 auto;
+    background-size: cover;
 }
 
 /* Header */
 header {
     background-color: #042664;
-    color: rgb(255, 255, 255);
+    color: white;
     padding: 1rem;
-    max-height: fit-content;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .logo h1 {
     text-align: center;
-    font-size: 4.5rem;
+    font-size: 2.5rem;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 nav ul {
     list-style: none;
     display: flex;
-    justify-content: center;
-    gap: 1rem;
-    margin-top: 8rem;
+    gap: 1.5rem;
+    margin: 1rem 0;
 }
 
 nav a {
-    color: rgb(255, 255, 255);
+    color: white;
     text-decoration: none;
     font-weight: bold;
     padding: 0.5rem 1rem;
     border-radius: 5px;
     transition: background-color 0.3s, color 0.3s;
-    font-size: 2em;
+    font-size: 1.2rem;
 }
 
 nav a:hover, nav a.active {
     background-color: #ffcc00;
     color: #a92609;
-    padding: 5%;
+}
+
+/* Hamburger Menu */
+.hamburger {
+    display: none;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
 }
 
 /* Main */
 main {
-    max-width: 1100px;
+    max-width: 1400px;
     margin: 0 auto;
     padding: 2rem;
-    margin-top: 5rem;
 }
 
 /* Hero Section */
 .hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('images/cricket-bg.jpg');
+    background-size: cover;
+    background-position: center;
     color: white;
     text-align: center;
     padding: 4rem 2rem;
-    margin-bottom: 2rem;
     border-radius: 10px;
+    margin: 2rem 0;
 }
 
-.hero h3 {
-    font-size: 3.5rem;
-    color: #c10c0c;
-     
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero h2, .hero h3 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #ffcc00;
 }
 
 .hero h4 {
-    margin-top: 0.2rem;
-    font-size: 2.5rem;
-    color: #029c30;
+    font-size: 1.8rem;
+    color: #ffffff;
 }
 
-/* Generic Section Heading */
-section h1 {
+.hero p {
+    font-size: 1.5rem;
+    color: #ffffff;
+}
+
+/* Featured Section (from index.html) */
+.featured h1 {
     color: #7326f9;
-    margin: 5rem;
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     text-align: center;
-}
-
-/* Cricketers Section */
-.cricket-home {
-    margin: 0;
-    padding: 0;
-}
-
-.cricket-home img {
-    width: 100%;
-    height: auto;
-    max-height: 400px;
-    object-fit: cover;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    display: block;
-}
-
-.cricketer-list {
-    display: inline-block;
-    flex-direction: column;
-    gap: 1.5rem;
-}
-
-.cricketer-box {
-    background-color: rgb(250, 250, 250);
-    display: flex;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-    overflow: hidden;
-    transition: transform 0.3s;
     margin-bottom: 2rem;
 }
 
-.cricketer-box:hover {
-    transform: translateY(-5px);
-}
-
-.cricketer-box img {
-    width: 300px;
-    height: 350px;
-    object-fit: cover;
-}
-
-.achievements {
-    padding: 2rem;
-    flex: 1;
-}
-
-.achievements h3 {
-    color: #004be2;
-    font-size: 1.8rem;
-    margin-bottom: 1rem;
-}
-
-.achievements p {
-    font-size: 1.1rem;
-    line-height: 1.8;
-}
-
-/* Grounds Section */
-.ground-list {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-}
-
-.ground-box {
-    background-color: rgb(175, 193, 191);
-    display: flex;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(30, 28, 28, 0.15);
-    overflow: hidden;
-    transition: transform 0.3s;
-    margin-bottom: 2rem;
-}
-
-.ground-box:hover {
-    transform: translateY(-5px);
-}
-
-.ground-box img {
-    width: 300px;
-    height: 350px;
-    object-fit: cover;
-}
-
-.details {
-    padding: 2rem;
-    flex: 1;
-}
-
-.details h3 {
-     
-    color: #9c1616;
-    font-size: 1.8rem;
-    margin-bottom: 1rem;
-}
-
-.details p {
-    color: rgb(109, 33, 33);
-    font-size: 1.1rem;
-    line-height: 1.8;
-}
-
-/* Featured Section */
 .feature-grid {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
-    margin-bottom: 3rem;
-    flex-wrap: nowrap;
 }
 
 .feature-card {
-    background-color: rgb(211, 208, 200);
-    width: 400px;
-    padding: 3rem;
-    border-radius: 50px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+    background-color: #f9f9f9;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
     text-align: center;
     transition: transform 0.3s;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 650px;
-    margin-block: 10px;
 }
 
 .feature-card:hover {
@@ -227,116 +140,447 @@ section h1 {
 
 .feature-card img {
     width: 100%;
-    max-height: 300px;
+    max-height: 200px;
     object-fit: cover;
-    border-radius: 14px;
-    margin-bottom: 2rem;
-}
-
-.feature-card h3 {
-    color: #160206;
-    font-size: 2rem;
+    border-radius: 10px;
     margin-bottom: 1rem;
 }
 
-.feature-card p {
-    font-size: 1.5rem;
-    line-height: 1.8;
-    color: #208436;
+.feature-card h3 {
+    color: #042664;
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
 }
 
-/* Team Grid (for ipl.html) */
+.feature-card p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/* Cricketers Section (from cricketers.html) */
+.cricketers {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.cricketers h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #042664;
+    margin-bottom: 2rem;
+}
+
+.cricketer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.cricketer-box {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.cricketer-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.cricketer-box img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-bottom: 2px solid #ffcc00;
+}
+
+.achievements {
+    padding: 1.5rem;
+}
+
+.achievements h3 {
+    font-size: 1.6rem;
+    color: #042664;
+    margin-bottom: 0.8rem;
+}
+
+.achievements p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.8;
+}
+
+.achievements p strong {
+    color: #333;
+}
+
+/* Grounds Section (from grounds.html) */
+.grounds {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.grounds h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #042664;
+    margin-bottom: 2rem;
+}
+
+#groundSearch {
+    padding: 0.8rem;
+    width: 80%;
+    max-width: 600px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 0 auto 2rem;
+    display: block;
+    transition: border-color 0.3s;
+}
+
+#groundSearch:focus {
+    border-color: #ffcc00;
+    outline: none;
+}
+
+.ground-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.ground-box {
+    background-color: #fff;
+    display: flex;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.ground-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.ground-box img {
+    width: 300px;
+    height: 250px;
+    object-fit: cover;
+    border-right: 2px solid #ffcc00;
+}
+
+.details {
+    padding: 1.5rem;
+    flex: 1;
+}
+
+.details h3 {
+    font-size: 1.6rem;
+    color: #042664;
+    margin-bottom: 0.8rem;
+}
+
+.details p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.8;
+}
+
+.details p strong {
+    color: #333;
+}
+
+/* IPL Teams Section (from ipl.html) */
+.ipl-teams {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.ipl-teams h1 {
+    color: #7326f9;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
 .team-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
-    margin-bottom: 3rem;
 }
 
 .team-card {
-    background-color: rgb(201, 116, 116);
+    background-color: #f9f9f9;
     padding: 2rem;
-    border-radius: 17%;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
     text-align: center;
-    transition: transform 0.3s;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .team-card:hover {
     transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
 .team-card img {
     width: 100%;
     max-height: 200px;
-    object-fit: contain;
+    object-fit: cover;
     border-radius: 10px;
     margin-bottom: 1rem;
 }
 
 .team-card h3 {
-    color: #12080a;
+    color: #042664;
     font-size: 1.8rem;
     margin-bottom: 0.5rem;
 }
 
 .team-card p {
     font-size: 1.2rem;
-    line-height: 1.8;
-    color: #bac1bc;
+    color: #555;
 }
 
-/* Team Info Section (for individual team pages) */
+/* Footer */
+footer {
+    background-color: #042664;
+    color: white;
+    padding: 3rem 1rem;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+footer p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.social-links a {
+    color: #ffcc00;
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #ffffff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .logo h1 {
+        font-size: 2rem;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #042664;
+        padding: 1rem;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: block;
+        position: absolute;
+        right: 1rem;
+        top: 1.5rem;
+    }
+
+    nav a {
+        font-size: 1rem;
+        padding: 0.8rem;
+    }
+
+    .hero h2, .hero h3 {
+        font-size: 2rem;
+    }
+
+    .hero h4 {
+        font-size: 1.4rem;
+    }
+
+    .hero p {
+        font-size: 1.2rem;
+    }
+
+    .cricketer-grid, .feature-grid, .team-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .cricketer-box img, .team-card img, .ground-box img {
+        height: 200px;
+    }
+
+    .ground-box {
+        flex-direction: column;
+    }
+
+    .ground-box img {
+        width: 100%;
+        border-right: none;
+        border-bottom: 2px solid #ffcc00;
+    }
+
+    .feature-card, .team-card {
+        width: 100%;
+    }
+
+    #groundSearch {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero {
+        padding: 2rem 1rem;
+    }
+
+    .hero h2, .hero h3 {
+        font-size: 1.8rem;
+    }
+
+    .hero h4 {
+        font-size: 1.2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .cricketers, .grounds, .ipl-teams, main {
+        padding: 1rem;
+    }
+
+    .cricketers h2, .grounds h2, .ipl-teams h1, .featured h1 {
+        font-size: 2rem;
+    }
+
+    .cricketer-box img, .team-card img, .ground-box img {
+        height: 180px;
+    }
+
+    .achievements h3, .details h3, .team-card h3 {
+        font-size: 1.4rem;
+    }
+
+    .achievements p, .details p, .team-card p {
+        font-size: 0.9rem;
+    }
+
+    .feature-card h3 {
+        font-size: 1.5rem;
+    }
+
+    .feature-card p {
+        font-size: 1rem;
+    }
+
+    footer {
+        padding: 2rem 1rem;
+    }
+
+    .social-links a {
+        font-size: 1.2rem;
+    }
+}
+
+/* Team Info Section */
 .team-info {
-    margin-bottom: 12rem;
-    
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    margin-bottom: 2rem;
+}
+
+.team-info h1 {
+    font-size: 2.5rem;
+    color: #042664;
+    text-align: center;
+    margin-bottom: 1.5rem;
 }
 
 .team-details {
     display: flex;
-    gap: 4rem;
-    background-color: rgb(208, 208, 197);
-    color: #ac0dc9;
-    border-radius: 50px;
-    box-shadow: 0 4px 10px rgba(201, 181, 181, 0.15);
-    padding: 2%;
-    
+    align-items: center;
+    gap: 2rem;
 }
 
 .team-logo {
-    width: 400px;
-    height: 400px;
-    object-fit:cover;
-    border-radius: 10px;
+    width: 300px;
+    height: 250px;
+    object-fit: cover;
+    border-right: 2px solid #ffcc00;
 }
 
 .info-text {
     flex: 1;
-     
+    padding: 1.5rem;
 }
 
 .info-text p {
     font-size: 1.2rem;
-    line-height: 2.2;
-    margin-bottom: 0.5rem;
+    color: #555;
+    margin-bottom: 0.8rem;
+}
+
+.info-text p strong {
+    color: #333;
 }
 
 /* Team Records Section */
+.team-records {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.team-records h1 {
+    font-size: 2.5rem;
+    color: #042664;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
 .record-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 3rem;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
 }
 
 .record-box {
-    background-color: rgb(176, 125, 127);
+    background-color: #f9f9f9;
     padding: 1.5rem;
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
     text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s;
 }
 
@@ -345,190 +589,130 @@ section h1 {
 }
 
 .record-box h3 {
-    color: #e3ef02;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
+    color: #042664;
     margin-bottom: 0.5rem;
 }
 
 .record-box p {
     font-size: 1rem;
-    line-height: 1.8;
-    color: #6afc09;
+    color: #555;
 }
 
-/* Event Grid (For icc-events.html) */
-.event-grid {
+
+.global-stats {
+    background-color: #fff;
+    padding: 2.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    margin: 2rem auto;
+    max-width: 1400px;
+}
+
+.global-stats h1 {
+    font-size: 3.2rem;
+    color: #042664;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.stats-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 2rem;
 }
 
-/* Event Card (For icc-events.html)
-.event-card {
-    background-color: white;
-    padding: 2rem;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    text-align: center;
-    transition: transform 0.3s;
-} */
-
-.event-card:hover {
-    transform: translateY(-5px);
-}
-
-.event-card img {
-    width: 100%;
-    max-height: 200px;
-    object-fit: cover;
-    border-radius: 10px;
-    margin-bottom: 1rem;
-}
-
-.event-card h3 {
-    color: #003087;
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
-}
-
-.event-card p {
-    font-size: 1rem;
-    line-height: 1.8;
-}
-
-/* Button Styling */
-button, .btn {
-    display: inline-block;
-    padding: 0.8rem 1.5rem;
-    background-color: #003087;
-    color: white;
-    text-decoration: none;
-    border: none;
-    border-radius: 5px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.3s, color 0.3s;
-}
-
-button:hover, .btn:hover {
-    background-color: #eaf600;
-    color: #003087;
-}
-
-/* Form Styling (For contact.html) */
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-form label {
-    font-weight: bold;
-    color: #003087;
-}
-
-form input, form textarea {
-    padding: 0.8rem;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    font-size: 1rem;
-}
-
-form button {
-    width: fit-content;
-    align-self: center;
-}
-
-/* Table Styling (For stats.html) */
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 1rem;
-}
-
-th, td {
-    padding: 1rem;
-    border: 1px solid #ddd;
-    text-align: left;
-}
-
-th {
-    background-color: #003087;
-    color: white;
-}
-
-tr:nth-child(even) {
+.stat-box {
     background-color: #f9f9f9;
-}
-
-/* Footer */
-footer {
-    background-color: #003087;
-    color: white;
+    padding: 2rem;
+    border-radius: 12px;
     text-align: center;
-    padding: 3rem;
-    margin-top: 2rem;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s, box-shadow 0.3s;
+    border-left: 4px solid #ffcc00;
 }
 
-.social-links a {
-    color: #ffcc00;
-    text-decoration: none;
-    margin: 0 0.5rem;
+.stat-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
 }
 
-.social-links a:hover {
-    text-decoration: underline;
+.stat-box h3 {
+    font-size: 1.8rem;
+    color: #042664;
+    margin-bottom: 0.8rem;
+    font-weight: bold;
 }
 
-/* Responsive Adjustments */
-@media (max-width: 700px) {
-    .cricketer-box, .ground-box, .team-details {
+.stat-box p {
+    font-size: 1.3rem;
+    color: #333;
+    line-height: 1.5;
+}
+/* Responsive Design for Team Sections */
+@media (max-width: 768px) {
+    .team-details {
         flex-direction: column;
-        align-items: center;
     }
 
-    .cricketer-box img, .ground-box img, .team-logo {
+    .team-logo {
         width: 100%;
-        height: auto;
+        height: 200px;
+        border-right: none;
+        border-bottom: 2px solid #ffcc00;
     }
 
-    .achievements, .details, .info-text {
+    .info-text {
         padding: 1rem;
     }
 
-    nav ul {
-        flex-direction: column;
-        gap: 1rem;
-    }
-
-    .hero {
-        padding: 2rem 1rem;
-    }
-
-    .hero h2 {
-        font-size: 2rem;
-    }
-
-    .feature-grid, .team-grid {
-        flex-direction: column;
-        align-items: center;
-        flex-wrap: wrap;
-    }
-
-    .feature-card, .team-card {
-        width: 100%;
-        max-width: 600px;
-    }
-
-    .event-grid, .record-list {
+    .record-list {
         grid-template-columns: 1fr;
+    }
+    .stats-list {
+        grid-template-columns: 1fr;
+    }
+
+    .global-stats h1 {
+        font-size: 2.5rem;
+    }
+
+    .stat-box {
+        padding: 1.5rem;
     }
 }
 
-@media (max-width: 600px) {
-    .hero-image {
-        max-height: 300px;
+@media (max-width: 480px) {
+    .team-info h1, .team-records h1 {
+        font-size: 2rem;
+    }
+
+    .info-text p {
+        font-size: 1rem;
+    }
+
+    .record-box h3 {
+        font-size: 1.2rem;
+    }
+
+    .record-box p {
+        font-size: 0.9rem;
+    }
+    .global-stats {
+        padding: 1.5rem;
+    }
+
+    .global-stats h1 {
+        font-size: 2rem;
+    }
+
+    .stat-box h3 {
+        font-size: 1.5rem;
+    }
+
+    .stat-box p {
+        font-size: 1.1rem;
     }
 }

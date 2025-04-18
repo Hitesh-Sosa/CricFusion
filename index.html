@@ -13,17 +13,27 @@
             <h1>International Cricket Portal</h1>
         </div>
         <nav>
+            <button class="hamburger">☰</button>
             <ul>
                 <li><a href="index.html" class="active">Home</a></li>
                 <li><a href="cricketers.html">Cricketers</a></li>
                 <li><a href="teams.html">Teams</a></li>
                 <li><a href="grounds.html">Grounds</a></li>
-                <li><a href="icc-events.html">ICC Events</a></li>
+                <li><a href="Icc ">ICC Events</a></li>
                 <li><a href="stats.html">Stats</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
+
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('nav ul');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
 
     <!-- Main Content -->
     <main>
@@ -38,7 +48,7 @@
             <h1>Featured Content</h1>
             <div class="feature-grid">
                 <div class="feature-card">
-                    <a href="icc-events.html">
+                    <a href="#">
                         <img src="images/ICC-home-page.jpg" alt="ICC WC">
                     </a>
                     <h3>International Cricket Council(ICC)</h3>
@@ -60,11 +70,13 @@
     <footer>
         <p>© 2025 International Cricket Portal. All rights reserved.</p>
         <div class="social-links">
-            <a href="https://www.instagram.com/hitesh_sosa_6731/">Instagram</a> | 
-            <a href="https://www.facebook.com/profile.php?id=61575019991441">Facebook</a> | 
-            <a href="https://www.linkedin.com/feed/">LinkedIn</a> |
-            <a href="https://github.com/Hitesh-Sosa">GitHub</a> 
+            <a href="https://www.instagram.com/hitesh_sosa_6731/">Instagram</a>
+            <a href="https://www.facebook.com/profile.php?id=61575019991441">Facebook</a>
+            <a href="https://www.linkedin.com/feed/">LinkedIn</a>
+            <a href="https://github.com/Hitesh-Sosa">GitHub</a>
         </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
