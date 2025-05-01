@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grounds - International Cricket Portal</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Header -->
@@ -12,11 +13,11 @@
         <div class="logo">
             <h1>International Cricket Portal</h1>
         </div>
+        <button class="hamburger" aria-label="Toggle Menu">☰</button>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="cricketers.html">Cricketers</a></li>
-                <li><a href="teams.html">Teams</a></li>
                 <li><a href="grounds.html" class="active">Grounds</a></li>
                 <li><a href="icc-events.html">ICC Events</a></li>
                 <li><a href="stats.html">Stats</a></li>
@@ -28,16 +29,19 @@
     <!-- Main Content -->
     <main>
         <section class="hero">
-            <h2>Iconic Cricket Stadiums</h2>
-            <p>Explore the world’s most famous and beautiful cricket grounds!</p>
+            <div class="hero-content">
+                <h2>Iconic Cricket Stadiums</h2>
+                <p>Discover the world’s most legendary and breathtaking cricket grounds!</p>
+            </div>
         </section>
 
         <section class="grounds">
             <h2>Legendary Cricket Grounds</h2>
             <!-- Search Bar -->
-            <div style="margin-bottom: 2rem; text-align: center;">
-                <input type="text" id="groundSearch" placeholder="Search grounds by name..." style="padding: 0.8rem; width: 80%; max-width: 600px; font-size: 1rem; border: 1px solid #ddd; border-radius: 5px;">
-            </div>
+            <!-- <div class="search-container">
+                <input type="text" id="groundSearch" placeholder="Search grounds by name or location..." aria-label="Search Grounds">
+                <span class="search-icon">🔍</span>
+            </div> -->
             <div class="ground-list">
                 <!-- Ground 1 -->
                 <div class="ground-box">
@@ -395,15 +399,12 @@
     <!-- Footer -->
     <footer>
         <h1>© 2025 International Cricket Portal. All rights reserved.</h1>
-        <div class="social-links">
-            <h1> 
-            <a href="#">Instagram</a> | <a href="#">Facebook</a> | <a href="#">GitHub</a> | <a href="#">Link List</a>
-            </h1>
-        </div>
+        
     </footer>
 
-    <!-- JavaScript for Search -->
-    <script>
+    <!-- JavaScript for Search and Hamburger -->
+    <!-- <script>
+        // Search Functionality
         document.getElementById('groundSearch').addEventListener('input', function() {
             const searchTerm = this.value.toLowerCase();
             const groundBoxes = document.querySelectorAll('.ground-box');
@@ -413,6 +414,12 @@
                 box.style.display = name.includes(searchTerm) ? '' : 'none';
             });
         });
-    </script>
+
+        // Hamburger Menu Toggle
+        document.querySelector('.hamburger').addEventListener('click', function() {
+            document.querySelector('nav ul').classList.toggle('active');
+            this.textContent = this.textContent === '☰' ? '✕' : '☰';
+        });
+    </script> -->
 </body>
 </html>

@@ -1,4 +1,4 @@
-<!DOCTYPE html>  
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -9,58 +9,60 @@
 <body>
     <!-- Header -->
     <header>
-        <div class="logo">
-            <h1>International Cricket Portal</h1>
+        <div class="header-container">
+            <div class="logo">
+                <h1>International Cricket Portal</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="cricketers.html">Cricketers</a></li>
+                    <li><a href="grounds.html">Grounds</a></li>
+                    <li><a href="icc-events.html">ICC Events</a></li>
+                    <li><a href="stats.html">Stats</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            
         </div>
-        <nav>
-            <button class="hamburger">☰</button>
-            <ul>
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="cricketers.html">Cricketers</a></li>
-                <li><a href="teams.html">Teams</a></li>
-                <li><a href="grounds.html">Grounds</a></li>
-                <li><a href="icc-events.html">ICC Events</a></li>
-                <li><a href="stats.html">Stats</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
     </header>
-
-    <script>
-        const hamburger = document.querySelector('.hamburger');
-        const navLinks = document.querySelector('nav ul');
-
-        hamburger.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-        });
-    </script>
 
     <!-- Main Content -->
     <main>
+        
+        <!-- Hero Section -->
         <section class="hero">
             <div class="hero-content">
-                <h3>Welcome to the Cricket Universe</h3>
-                <h4>Your ultimate source for international cricket updates, stats, and more!</h4>
+                <h2>Welcome to the Cricket Universe</h2>
+                <p>Your ultimate source for international cricket updates, stats, and more!</p>
             </div>
         </section>
-        
+
+        <!-- Featured Section -->
         <section class="featured">
-            <h1>Featured Content</h1>
+            <h2>Featured Content</h2>
             <div class="feature-grid">
                 <div class="feature-card">
-                    <a href="#">
-                        <img src="images/ICC-home-page.jpg" alt="ICC WC">
+                    <a href="icc.html">
+                        <div class="image-container">
+                            <img src="images/ICC-home-page.jpg" alt="ICC World Cup">
+                        </div>
+                        <div class="feature-card-content">
+                            <h3>International Cricket Council (ICC)</h3>
+                            <p>Relive the thrill of World Cup moments</p>
+                        </div>
                     </a>
-                    <h3>International Cricket Council(ICC)</h3>
-                    <p>Relive score of World Cup</p>
                 </div>
-
                 <div class="feature-card">
                     <a href="ipl.html">
-                        <img src="images/IPL-LOGO.jpg" alt="IPL CUP">
+                        <div class="image-container">
+                            <img src="images/IPL-LOGO.jpg" alt="IPL Trophy">
+                        </div>
+                        <div class="feature-card-content">
+                            <h3>Indian Premier League (IPL)</h3>
+                            <p>Explore Tata IPL 2025 teams and players</p>
+                        </div>
                     </a>
-                    <h3>Indian Premier League(IPL)</h3>
-                    <p>Explore Tata IPL 2025 teams and players</p>
                 </div>
             </div>
         </section>
@@ -69,14 +71,7 @@
     <!-- Footer -->
     <footer>
         <p>© 2025 International Cricket Portal. All rights reserved.</p>
-        <div class="social-links">
-            <a href="https://www.instagram.com/hitesh_sosa_6731/">Instagram</a>
-            <a href="https://www.facebook.com/profile.php?id=61575019991441">Facebook</a>
-            <a href="https://www.linkedin.com/feed/">LinkedIn</a>
-            <a href="https://github.com/Hitesh-Sosa">GitHub</a>
-        </div>
+         
     </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>

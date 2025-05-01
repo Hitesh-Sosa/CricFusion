@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teams - International Cricket Portal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <!-- <a href="icc.html">
+                <img src="images/ICC-home-page.jpg" alt="ICC Logo" class="icc-logo">
+            </a> -->
+            <h1>International Cricket Portal</h1>
+        </div>
+        <nav>
+            <button class="hamburger">☰</button>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cricketers.html">Cricketers</a></li>
+                 
+                <li><a href="grounds.html">Grounds</a></li>
+                <li><a href="icc-events.html">ICC Events</a></li>
+                <li><a href="stats.html">Stats</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('nav ul');
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+
+    <!-- Main Content -->
+    <main>
+        <section class="teams">
+            <h1>T20I Teams and Player Performances</h1>
+            <p>Explore the current T20I squads of all ICC full-member teams, with player performances and captains highlighted (as of April 2025).</p>
+            <div class="team-grid">
+                <!-- India -->
+                <div class="team-card">
+                    <img src="images/india-logo.jpg" alt="India Team Logo" class="team-logo">
+                    <h3>India</h3>
+                    <p>2024 T20 World Cup winners, ranked No. 1 in T20I (269 points).</p>[](https://en.wikipedia.org/wiki/India_national_cricket_team)
+                    <h4>Key Players</h4>
+                    <ul>
+                        <li><strong>Rohit Sharma</strong> (Batter, Captain): 2024 T20WC: 257 runs, Avg: 36.71, SR: 156.7, 3 fifties. Led India to 2024 T20WC title.</li>[](https://www.icc-cricket.com/tournaments/t20cricketworldcup/news/six-indian-t20-world-cup-stars-named-in-team-of-the-tournament)
+                        <li class="captain-highlight"><strong>Suryakumar Yadav</strong> (Batter, Captain): 2024 T20WC: 199 runs, Avg: 28.42, SR: 135.37, 2 fifties. Current T20I captain (2025).</li>[](https://www.hindustantimes.com/cricket/t20-world-cup/team-india-squad-4)
+                        <li><strong>Virat Kohli</strong> (Batter): 2024 T20WC: 151 runs, Avg: 18.87, SR: 112.68, 1 fifty. Key anchor in finals.</li>
+                        <li><strong>Jasprit Bumrah</strong> (Bowler): 2024 T20WC: 15 wickets, Avg: 8.26, Econ: 4.17. Player of the Tournament.</li>[](https://www.icc-cricket.com/news/class-and-firepower-in-the-icc-men-s-t20i-team-of-the-year-for-2024)
+                        <li><strong>Arshdeep Singh</strong> (Bowler): 2024 T20WC: 17 wickets, Avg: 12.64, Econ: 7.16. Joint-highest wicket-taker.</li>[](https://en.wikipedia.org/wiki/2024_Men%27s_T20_World_Cup)
+                        <li><strong>Hardik Pandya</strong> (All-rounder): 2024 T20WC: 144 runs, SR: 150, 11 wickets, Econ: 7.64. Vice-captain.</li>[](https://www.hindustantimes.com/cricket/t20-world-cup/team-india-squad-4)
+                    </ul>
+                </div>
+                <!-- Australia -->
+                <div class="team-card">
+                    <img src="images/australia-logo.jpg" alt="Australia Team Logo" class="team-logo">
+                    <h3>Australia</h3>
+                    <p>2023 ODI World Cup winners, ranked No. 2 in T20I (254 points).</p>[](https://www.mykhel.com/cricket/icc-t20-rankings/)
+                    <h4>Key Players</h4>
+                    <ul>
+                        <li><strong>Travis Head</strong> (Batter): 2024: 378 runs, Avg: 42, SR: 179.8, 4 fifties. Top-ranked T20I batter.</li>[](https://www.icc-cricket.com/news/class-and-firepower-in-the-icc-men-s-t20i-team-of-the-year-for-2024)
+                        <li><strong>Mitchell Marsh</strong> (All-rounder, Captain): 2024: 250 runs, SR: 140, 10 wickets, Econ: 7.5. Leads aggressive T20I side.</li>[](https://www.aljazeera.com/sports/2024/5/26/hold_icc-mens-t20-world-cup-2024-full-squad-list)
+                        <li><strong>Glenn Maxwell</strong> (All-rounder): 2024: 200 runs, SR: 160, 8 wickets, Econ: 6.8. Dynamic middle-order.</li>
+                        <li><strong>Adam Zampa</strong> (Bowler): 2024 T20WC: 14 wickets, Avg: 14.5, Econ: 6.5. Leading spinner.</li>
+                        <li><strong>Josh Hazlewood</strong> (Bowler): 2024: 12 wickets, Avg: 15, Econ: 6.2. Key pacer.</li>
+                    </ul>
+                </div>
+                <!-- England -->
+                <div class="team-card">
+                    <img src="images/england-logo.jpg" alt="England Team Logo" class="team-logo">
+                    <h3>England</h3>
+                    <p>2022 T20 World Cup winners, ranked No. 3 in T20I (254 points).</p>[](https://www.mykhel.com/cricket/icc-t20-rankings/)
+                    <h4>Key Players</h4>
+                    <ul>
+                        <li><strong>Phil Salt</strong> (Batter): 2024: 350 runs, Avg: 38, SR: 165, 3 fifties. No. 2 T20I batter.</li>[](https://www.icc-cricket.com/news/class-and-firepower-in-the-icc-men-s-t20i-team-of-the-year-for-2024)
+                        <li class="captain-highlight"><strong>Jos Buttler</strong> (Wicketkeeper-Batter, Captain): 2024: 300 runs, Avg: 35, SR: 145, 2 fifties. Leads dynamic side.</li>[](https://www.aljazeera.com/sports/2024/5/26/hold_icc-mens-t20-world-cup-2024-full-squad-list)
+                        <li><strong>Harry Brook</strong> (Batter): 2024: 280 runs, SR: 150, Avg: 40. Rising star.</li>
+                        <li><strong>Adil Rashid</strong> (Bowler): 2024 T20WC: 10 wickets, Avg: 18, Econ: 6.7. Top spinner.</li>
+                        <li><strong>Jofra Archer</strong> (Bowler): 2024 T20WC: 10 wickets, Avg: 19, Econ: 7.1. Pace spearhead.</li>
+                    </ul>
+                </div>
+                <!-- South Africa -->
+                <div class="team-card">
+                    <img src="images/southafrica-logo.jpg" alt="South Africa Team Logo" class="team-logo">
+                    <h3>South Africa</h3>
+                    <p>2024 T20 World Cup finalists, ranked No. 4 in T20I.</p>[](https://en.wikipedia.org/wiki/India_national_cricket_team)
+                    <h4>Key Players</h4>
+                    <ul>
+                        <li><strong>Heinrich Klaasen</strong> (Wicketkeeper-Batter): 2024: 350 runs, Avg: 50, SR: 160. Explosive finisher.</li>[](https://www.espncricinfo.com/story/how-rohit-sharma-and-his-indian-team-have-been-dominating-icc-tournaments-1476672)
+                        <li class="captain-highlight"><strong>Aiden Markram</strong> (Batter, Captain): 2024: 250 runs, Avg: 30, SR: 135. Led SA to 2024 T20WC final.</li>[](https://www.livemint.com/sports/cricket-news/icc-champions-trophy-2025-india-squad-announcement-live-ajit-agarkar-rohit-sharma-jasprit-bumrah-mohammed-shami-bcci-11736559620426.html)
+                        <li><strong>Kagiso Rabada</strong> (Bowler): 2024: 12 wickets, Avg: 20, Econ: 6.5. Pace leader.</li>
+                        <li><strong>Anrich Nortje</strong> (Bowler): 2024 T20WC: 15 wickets, Avg: 13.4, Econ: 5.74. Key pacer.</li>
+                        <li><strong>Tabraiz Shamsi</strong> (Bowler): 2024: 10 wickets, Avg: 22, Econ: 7.0. Leading spinner.</li>
+                    </ul>
+                </div>
+                <!-- Pakistan -->
+                <div class="team-card">
+                    <img src="images/pakistan-logo.jpg" alt="Pakistan Team Logo" class="team-logo">
+                    <h3>Pakistan</h3>
+                    <p>2009 T20 World Cup winners, ranked No. 5 in T20I.</p>[](https://www.mykhel.com/cricket/icc-t20-rankings/)
+                    <h4>Key Players</h4>
+                    <ul>
+                        <li><strong>Babar Azam</strong> (Batter): 2024: 400 runs, Avg: 40, SR: 140, 3 fifties. Top run-scorer.</li>
+                        <li class="captain-highlight"><strong>Mohammad Rizwan</strong> (Wicketkeeper-Batter, Captain): 2024: 350 runs, Avg: 45, SR: 130. Consistent leader.</li>[](https://en.wikipedia.org/wiki/India_national_cricket_team)
+                        <li><strong>Shaheen Afridi</strong> (Bowler): 2024: 15 wickets, Avg: 18, Econ: 7.2. Pace spearhead.</li>
+                        <li><strong>Haris Rauf</strong> (Bowler): 2024: 12 wickets, Avg: 20, Econ: 7.5. Fast bowler.</li>
+                        <li><strong>Shadab Khan</strong> (All-rounder): 2024: 150 runs, 10 wickets, Econ: 7.0. Spin all-rounder.</li>
+                    </ul>
+                </div>
+                <!-- New Zealand -->
+                <div class="team-card">
+                    <img src="images/newzealand-logo.jpg" alt="New Zealand Team Logo" class="team-logo">
+                    <h3>New Zealand</h3>
+                    <p>Consistent performers, ranked No. 6 in T20I.</p>[](https://www.mykhel.com/cricket/icc-t20-rankings/)
+                    <h4>Key Players</h4>
+                    <ul>
+                        <li><strong>Devon Conway</strong> (Batter): 2024: 300 runs, Avg: 35, SR: 135, 2 fifties. Reliable opener.</li>
+                        <li class="captain-highlight"><strong>Mitchell Santner</strong> (All-rounder, Captain): 2024: 150 runs, 12 wickets, Econ: 6.5. Spin leader.</li>[](https://www.icc-cricket.com/media-releases/icc-men-s-champions-trophy-2025-team-of-the-tournament-revealed)
+                        <li><strong>Finn Allen</strong> (Batter): 2024: 280 runs, SR: 160, Avg: 30. Aggressive opener.</li>
+                        <li><strong>Tim Southee</strong> (Bowler): 2024: 10 wickets, Avg: 22, Econ: 7.0. Veteran pacer.</li>
+                        <li><strong>Trent Boult</strong> (Bowler): 2024 T20WC: 13 wickets, Avg: 14, Econ: 6.0. Swing specialist.</li>
+                    </ul>
+                </div>
+                <!-- Bangladesh -->
+                <div class="team-card">
+                    <img src="images/bangladesh-logo.jpg" alt="Bangladesh Team Logo" class="team-logo">
+                    <h3>Bangladesh</h3>
+                    <p>Emerging T20I side, ranked No. 9 in T20I.</p>[](https://www.mykhel.com/cricket/icc-t20-rankings/)
+                    <h4>Key Players</h4>
+                    <ul>
+                        <li><strong>Towhid Hridoy</strong> (Batter): 2024: 250 runs, Avg: 30, SR: 140. Rising star.</li>
+                        <li class="captain-highlight"><strong>Najmul Hossain Shanto</strong> (Batter, Captain): 2024: 200 runs, Avg: 25, SR: 130. Steady leader.</li>
+                        <li><strong>Shakib Al Hasan</strong> (All-rounder): 2024: 150 runs, 10 wickets, Econ: 6.8. Veteran performer.</li>
+                        <li><strong>Taskin Ahmed</strong> (Bowler): 2024: 12 wickets, Avg: 20, Econ: 7.2. Pace leader.</li>
+                        <li><strong>Mustafizur Rahman</strong> (Bowler): 2024 T20WC: 10 wickets, Avg: 18, Econ: 6.5. Cutter specialist.</li>
+                    </ul>
+                </div>
+                <!-- Sri Lanka -->
+                <div class="team-card">
+                    <img src="images/srilanka-logo.jpg" alt="Sri Lanka Team Logo" class="team-logo">
+                    <h3>Sri Lanka</h3>
+                    <p>2014 T20 World Cup winners, ranked No. 8 in T20I.</p>[](https://www.mykhel.com/cricket/icc-t20-rankings/)
+                    <h4>Key Players</h4>
+                    <ul>
+                        <li><strong>Kusal Mendis</strong> (Wicketkeeper-Batter): 2024: 280 runs, Avg: 35, SR: 145. Top-order anchor.</li>
+                        <li class="captain-highlight"><strong>Wanindu Hasaranga</strong> (All-rounder, Captain): 2024: 15 wickets, Avg: 15, Econ: 6.5, 150 runs, SR: 140. No. 3 T20I bowler.</li>[](https://www.icc-cricket.com/news/class-and-firepower-in-the-icc-men-s-t20i-team-of-the-year-for-2024)
+                        <li><strong>Pathum Nissanka</strong> (Batter): 2024: 300 runs, Avg: 40, SR: 150. Consistent opener.</li>
+                        <li><strong>Maheesh Theekshana</strong> (Bowler): 2024: 12 wickets, Avg: 18, Econ: 6.7. Mystery spinner.</li>
+                        <li><strong>Matheesha Pathirana</strong> (Bowler): 2024: 10 wickets, Avg: 20, Econ: 7.5. Death-over specialist.</li>
+                    </ul>
+                </div>
+                <!-- West Indies -->
+                <div class="team-card">
+                    <img src="images/westindies-logo.jpg" alt="West Indies Team Logo" class="team-logo">
+                    <h3>West Indies</h3>
+                    <p>2012, 2016 T20 World Cup winners, ranked No. 7 in T20I.</p>[](https://www.mykhel.com/cricket/icc-t20-rankings/)
+                    <h4>Key Players</h4>
+                    <ul>
+                        <li><strong>Nicholas Pooran</strong> (Wicketkeeper-Batter): 2024 T20WC: 228 runs, Avg: 38, SR: 146.15, 1 fifty. Top performer.</li>[](https://www.icc-cricket.com/tournaments/t20cricketworldcup/news/six-indian-t20-world-cup-stars-named-in-team-of-the-tournament)
+                        <li class="captain-highlight"><strong>Rovman Powell</strong> (Batter, Captain): 2024: 200 runs, Avg: 30, SR: 150. Power-hitting leader.</li>
+                        <li><strong>Andre Russell</strong> (All-rounder): 2024: 150 runs, SR: 160, 10 wickets, Econ: 7.0. Explosive all-rounder.</li>
+                        <li><strong>Alzarri Joseph</strong> (Bowler): 2024: 12 wickets, Avg: 20, Econ: 7.2. Pace leader.</li>
+                        <li><strong>Akeal Hosein</strong> (Bowler): 2024 T20WC: 10 wickets, Avg: 18, Econ: 6.5. Left-arm spinner.</li>
+                    </ul>
+                </div>
+                <!-- Afghanistan -->
+                <div class="team-card">
+                    <img src="images/afghanistan-logo.jpg" alt="Afghanistan Team Logo" class="team-logo">
+                    <h3>Afghanistan</h3>
+                    <p>2024 T20 World Cup semi-finalists, ranked No. 10 in T20I.</p>[](https://www.mykhel.com/cricket/icc-t20-rankings/)
+                    <h4>Key Players</h4>
+                    <ul>
+                        <li><strong>Rahmanullah Gurbaz</strong> (Wicketkeeper-Batter): 2024 T20WC: 281 runs, Avg: 35.12, SR: 124.33, 3 fifties. Leading run-scorer.</li>[](https://www.icc-cricket.com/tournaments/t20cricketworldcup/news/six-indian-t20-world-cup-stars-named-in-team-of-the-tournament)
+                        <li class="captain-highlight"><strong>Rashid Khan</strong> (Bowler, Captain): 2024 T20WC: 14 wickets, Avg: 12.78, Econ: 6.17. No. 1 T20I all-rounder.</li>[](https://www.icc-cricket.com/tournaments/t20cricketworldcup/news/six-indian-t20-world-cup-stars-named-in-team-of-the-tournament)
+                        <li><strong>Ibrahim Zadran</strong> (Batter): 2024 T20WC: 231 runs, Avg: 28.87, SR: 107.44, 1 fifty. Reliable opener.</li>[](https://www.icc-cricket.com/media-releases/icc-men-s-champions-trophy-2025-team-of-the-tournament-revealed)
+                        <li><strong>Fazalhaq Farooqi</strong> (Bowler): 2024 T20WC: 17 wickets, Avg: 11.29, Econ: 6.31. Joint-highest wicket-taker.</li>[](https://en.wikipedia.org/wiki/2024_Men%27s_T20_World_Cup)
+                        <li><strong>Naveen-ul-Haq</strong> (Bowler): 2024: 10 wickets, Avg: 20, Econ: 7.0. Emerging pacer.</li>
+                    </ul>
+                </div>
+                <!-- Ireland -->
+                <div class="team-card">
+                    <img src="images/ireland-logo.jpg" alt="Ireland Team Logo" class="team-logo">
+                    <h3>Ireland</h3>
+                    <p>Competitive associate nation, ranked No. 11 in T20I.</p>[](https://www.mykhel.com/cricket/icc-t20-rankings/)
+                    <h4>Key Players</h4>
+                    <ul>
+                        <li><strong>Harry Tector</strong> (Batter): 2024: 200 runs, Avg: 30, SR: 135. Middle-order anchor.</li>
+                        <li class="captain-highlight"><strong>Paul Stirling</strong> (Batter, Captain): 2024: 250 runs, Avg: 25, SR: 140. Aggressive opener.</li>
+                        <li><strong>Lorcan Tucker</strong> (Wicketkeeper-Batter): 2024: 180 runs, SR: 130, Avg: 28. Reliable keeper.</li>
+                        <li><strong>Mark Adair</strong> (Bowler): 2024: 12 wickets, Avg: 20, Econ: 7.0. Leading pacer.</li>
+                        <li><strong>Josh Little</strong> (Bowler): 2024: 10 wickets, Avg: 22, Econ: 7.2. IPL-experienced pacer.</li>
+                    </ul>
+                </div>
+                <!-- Zimbabwe -->
+                <div class="team-card">
+                    <img src="images/zimbabwe-logo.jpg" alt="Zimbabwe Team Logo" class="team-logo">
+                    <h3>Zimbabwe</h3>
+                    <p>Returning T20I side, ranked No. 12 in T20I.</p>[](https://www.mykhel.com/cricket/icc-t20-rankings/)
+                    <h4>Key Players</h4>
+                    <ul>
+                        <li><strong>Sikandar Raza</strong> (All-rounder): 2024: 200 runs, SR: 140, 10 wickets, Econ: 6.8. Team linchpin.</li>
+                        <li class="captain-highlight"><strong>Craig Ervine</strong> (Batter, Captain): 2024: 180 runs, Avg: 30, SR: 125. Steady leader.</li>
+                        <li><strong>Sean Williams</strong> (Batter): 2024: 150 runs, Avg: 25, SR: 130. Experienced middle-order.</li>
+                        <li><strong>Blessing Muzarabani</strong> (Bowler): 2024: 12 wickets, Avg: 20, Econ: 7.0. Tall pacer.</li>
+                        <li><strong>Richard Ngarava</strong> (Bowler): 2024: 10 wickets, Avg: 22, Econ: 7.2. Left-arm pacer.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 International Cricket Portal. All rights reserved.</p>
+        <div class="social-links">
+            <a href="https://instagram.com">Instagram</a>
+            <a href="https://facebook.com">Facebook</a>
+            <a href="https://github.com">GitHub</a>
+            <a href="https://linklist.com">Link List</a>
+        </div>
+    </footer>
+</body>
+</html>

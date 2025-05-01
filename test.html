@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Teams - International Cricket Portal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <h1>International Cricket Portal</h1>
+        </div>
+        <nav>
+            <button class="hamburger">☰</button>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cricketers.html">Cricketers</a></li>
+                <li><a href="grounds.html">Grounds</a></li>
+                <li><a href="icc-events.html">ICC Events</a></li>
+                <li><a href="stats.html">Stats</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h3>Test International Teams</h3>
+                <p>Explore the elite Test-playing nations in the longest format of cricket.</p>
+            </div>
+        </section>
+
+        <section class="test-teams">
+            <h1>Test-MatchTeams</h1>
+            <div class="team-grid">
+                <div class="team-card">
+                    <a href="india-test.html">
+                        <img src="images/india-test.jpg" alt="India Logo">
+                    </a>
+                    <h3>India</h3>
+                    <p>2021-2023 WTC finalists led by Rohit Sharma.</p>
+                </div>
+                <div class="team-card">
+                    <a href="australia-test.html">
+                        <img src="images/australia-test.jpg" alt="Australia Logo">
+                    </a>
+                    <h3>Australia</h3>
+                    <p>2023 WTC champions captained by Pat Cummins.</p>
+                </div>
+                <div class="team-card">
+                    <a href="england-test.html">
+                        <img src="images/england-test.jpg" alt="England Logo">
+                    </a>
+                    <h3>England</h3>
+                    <p>‘Bazball’ innovators led by Ben Stokes.</p>
+                </div>
+                <div class="team-card">
+                    <a href="southafrica-test.html">
+                        <img src="images/southafrica-test.jpg" alt="South Africa Logo">
+                    </a>
+                    <h3>South Africa</h3>
+                    <p>Strong team captained by Temba Bavuma.</p>
+                </div>
+                <div class="team-card">
+                    <a href="newzealand-test.html">
+                        <img src="images/newzealand-test.jpg" alt="New Zealand Logo">
+                    </a>
+                    <h3>New Zealand</h3>
+                    <p>2021 WTC champions led by Tim Southee.</p>
+                </div>
+                <div class="team-card">
+                    <a href="pakistan-test.html">
+                        <img src="images/pakistan-test.jpg" alt="Pakistan Logo">
+                    </a>
+                    <h3>Pakistan</h3>
+                    <p>Competitive side captained by Shan Masood.</p>
+                </div>
+                <div class="team-card">
+                    <a href="srilanka-test.html">
+                        <img src="images/srilanka-test.jpg" alt="Sri Lanka Logo">
+                    </a>
+                    <h3>Sri Lanka</h3>
+                    <p>Spin-heavy team led by Dhananjaya de Silva.</p>
+                </div>
+                <div class="team-card">
+                    <a href="westindies-test.html">
+                        <img src="images/westindies-test.jpg" alt="West Indies Logo">
+                    </a>
+                    <h3>West Indies</h3>
+                    <p>Resilient team captained by Kraigg Brathwaite.</p>
+                </div>
+                <!-- <div class="team-card">
+                    <a href="bangladesh-test.html">
+                        <img src="images/bangladesh-test.jpg" alt="Bangladesh Logo">
+                    </a>
+                    <h3>Bangladesh</h3>
+                    <p>Improving team led by Najmul Hossain Shanto.</p>
+                </div> -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 International Cricket Portal. All rights reserved.</p>
+        <div class="social-links">
+            <a href="https://www.instagram.com/hitesh_sosa_6731/">Instagram</a>
+            <a href="https://www.facebook.com/profile.php?id=61575019991441">Facebook</a>
+            <a href="https://www.linkedin.com/feed/">LinkedIn</a>
+            <a href="https://github.com/Hitesh-Sosa">GitHub</a>
+        </div>
+    </footer>
+
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('nav ul');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
